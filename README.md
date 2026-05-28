@@ -52,7 +52,20 @@ Usage: Use $content-to-stick-figure-sketch ...
 
 ## 安装
 
-### 从本地安装
+### 推荐方式：直接让 Codex 安装
+
+在 Codex 里新开一个对话，把这个 GitHub 链接发给 Codex，然后让它帮你安装：
+
+```text
+请帮我安装这个 Codex skill：
+https://github.com/ZekerTop/content-to-stick-figure-sketch
+```
+
+Codex 会读取这个仓库里的 skill 文件，并把它安装到本地 skills 目录。安装完成后，按 Codex 的提示刷新或重启 Codex。
+
+如果你 fork 了仓库，把链接换成自己的 GitHub 仓库地址即可。
+
+### 本地源码安装
 
 把 skill 文件夹复制到 Codex skills 目录：
 
@@ -62,19 +75,6 @@ cp -R ./content-to-stick-figure-sketch "${CODEX_HOME:-$HOME/.codex}/skills/"
 ```
 
 然后重启 Codex。
-
-### 从 GitHub 安装
-
-仓库发布后，可以用 Codex skill installer 安装：
-
-```bash
-python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --repo ZekerTop/content-to-stick-figure-sketch \
-  --path content-to-stick-figure-sketch \
-  --name content-to-stick-figure-sketch
-```
-
-如果你 fork 了仓库，把 `ZekerTop/content-to-stick-figure-sketch` 换成自己的 `owner/repo`。
 
 ## 最快开始
 
