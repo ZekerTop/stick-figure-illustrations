@@ -1,11 +1,11 @@
 ---
 name: content-to-stick-figure-sketch
 description: |
-  把创作者内容转成以中性火柴人为默认主体的草图式解释插画。用于文章配图、Newsletter、
-  社媒长图/轮播、PPT/Keynote 点缀图、产品文档、教程步骤图、课程讲义、播客/视频缩略图概念草图、
-  开源项目说明、SaaS 空状态、功能发布、观点视觉化、shot list、插画提示词、改图和视觉系统扩展。
-  用户没有特别指定人物形态时，必须默认生成有情绪的中性火柴人：圆头、线条身体、简单四肢、黑色线稿，
-  用极简表情和姿态读出情绪，可品牌化的单色点缀；不要使用任何特定作者 IP、固定吉祥物、高识别度角色设定或可识别的第三方风格。
+  Turn creator content into emotionally expressive neutral stick-figure sketch illustrations for
+  articles, newsletters, social carousels, slides, product docs, tutorials, courses, open-source
+  explainers, SaaS empty states, feature visuals, shot lists, image prompts, and visual-system
+  extensions. Default to simple line-body stick figures with readable emotion, one brandable accent
+  color, and no mascot identity, recognizable character IP, or imitation of specific third-party styles.
 ---
 
 # 内容转火柴人草图

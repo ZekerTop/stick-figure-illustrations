@@ -5,7 +5,7 @@
 This is a Codex creative-assistance skill for turning articles, docs, tutorials, slides, social content, open-source project explainers, and product states into sketch-style explanatory illustrations with **emotionally expressive neutral stick figures** as the default main subject.
 
 ```text
-Display name: 内容转火柴人草图
+Display name: Content to Stick Figure Sketch
 Skill ID: content-to-stick-figure-sketch
 Usage: Use $content-to-stick-figure-sketch ...
 ```

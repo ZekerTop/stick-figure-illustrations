@@ -1,5 +1,5 @@
 interface:
-  display_name: "内容转火柴人草图"
+  display_name: "Content to Stick Figure Sketch"
   short_description: "Turn creator content into emotionally expressive stick-figure sketch illustrations"
   default_prompt: "Use $content-to-stick-figure-sketch to plan and generate emotionally expressive stick-figure sketch illustrations for this creator content."
 policy:

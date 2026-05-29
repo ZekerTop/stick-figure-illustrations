@@ -5,7 +5,7 @@
 这是一个适合放在 Codex 里的创作辅助 skill：把文章、文档、教程、PPT、社媒内容、开源项目说明和产品状态，转成以**有情绪的中性火柴人**为默认主体的草图式解释插画。
 
 ```text
-Display name: 内容转火柴人草图
+Display name: Content to Stick Figure Sketch
 Skill ID: content-to-stick-figure-sketch
 Usage: Use $content-to-stick-figure-sketch ...
 ```
