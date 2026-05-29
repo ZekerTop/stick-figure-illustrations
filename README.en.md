@@ -263,7 +263,7 @@ Requirements:
 - each image needs a clear stick-figure action
 ```
 
-More examples: [examples/prompts.md](./examples/prompts.md)
+More English examples: [examples/prompts.en.md](./examples/prompts.en.md). Chinese examples: [examples/prompts.md](./examples/prompts.md)
 
 ## Scene Patterns
 
@@ -287,7 +287,8 @@ content-to-stick-figure-sketch/
 ├── README.md
 ├── README.en.md
 ├── examples/
-│   └── prompts.md
+│   ├── prompts.md
+│   └── prompts.en.md
 ├── content-to-stick-figure-sketch/
 │   ├── SKILL.md
 │   ├── agents/

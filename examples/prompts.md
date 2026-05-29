@@ -1,176 +1,183 @@
-# Prompt Examples
+# Prompt 示例
 
-Copy these prompts into Codex and replace the placeholders.
+把这些提示词复制到 Codex 里，再替换占位内容。
 
-## Best Starting Prompt
+## 最佳起手式
 
 ```text
-Use $content-to-stick-figure-sketch to read the content below. Do not generate any images yet.
+Use $content-to-stick-figure-sketch 阅读下面内容，先不要生图。
 
-Please create a stick-figure sketch shot list:
-- Select only the 5 strongest visual thinking anchors
-- For each image, include: placement, canvas, theme, core idea, stick-figure action, emotion, main objects, short labels, and priority
-- Each image should express one idea only
-- Keep the stick figure as the main subject by default
-- End by marking the best 2 images to generate first
+请输出一份火柴人草图 shot list：
+- 只挑真正值得视觉化的 5 个认知锚点
+- 每张图说明：放置位置、画幅、主题、核心意思、火柴人动作、情绪、主要元素、短标注、优先级
+- 每张图只表达一个意思
+- 默认火柴人作为主体
+- 最后标出最值得优先生成的 2 张
 
-<Paste content>
+<粘贴内容>
 ```
 
-## Generate From One Idea
+## 生成单张观点图
 
 ```text
-Use $content-to-stick-figure-sketch to generate one stick-figure sketch illustration for this idea:
+Use $content-to-stick-figure-sketch 为这个观点生成一张火柴人草图：
 
-"Real automation is not about fewer clicks. It is about making one less decision."
+“真正的自动化不是少点几下，而是少做一次判断。”
 
-Requirements:
-- 16:9 canvas
-- white background with black line art
-- one green accent color
-- a neutral stick figure as the main subject
-- readable emotion through simple face marks and posture
-- no more than 3 short labels
+要求：
+- 画幅 16:9
+- 白底黑线
+- 一个绿色点缀色
+- 中性火柴人作为主体
+- 用简单表情和姿态把情绪画出来
+- 标注最多 3 个，短一点
 ```
 
-## Article Illustrations
+## 文章配图
 
 ```text
-Use $content-to-stick-figure-sketch with the article preset to plan 5 stick-figure sketch illustrations for this article.
-Output the shot list first. Do not generate images yet.
+Use $content-to-stick-figure-sketch 用 article preset 为这篇文章规划 5 张火柴人草图。
+先输出 shot list，不要生图。
 
-Requirements:
-- 16:9 or 3:2
-- each image should show one cognitive turning point
-- the stick figure must carry the core action
-- give each stick figure a clear emotion
-- no more than 3 labels per image
-- mark the best 2 images to generate first
+要求：
+- 16:9 或 3:2
+- 每张图只画一个认知转折
+- 火柴人必须承担核心动作
+- 每张图要有清楚情绪
+- 标注最多 3 个
+- 标出最值得优先生成的 2 张
 
-<Paste article>
+<粘贴文章>
 ```
 
-## Social Carousel
+## 社媒轮播
 
 ```text
-Use $content-to-stick-figure-sketch with the carousel preset to design a 7-page social carousel for this topic.
-Output the shot list first. Do not generate images yet.
+Use $content-to-stick-figure-sketch 用 carousel preset 把这个主题设计成 7 页社媒轮播。
+先输出 shot list，不要生图。
 
-Topic: How one person turns AI into a daily workflow
+主题：一个人如何把 AI 变成日常工作流
 
-Requirements:
-- 4:5 canvas
-- one stick-figure action per page
-- a clear emotion on each page
-- one short title per page
-- page 1 needs a strong hook
-- page 7 should close with an action
+要求：
+- 画幅 4:5
+- 每页一个火柴人动作
+- 每页要有清楚情绪
+- 每页一个短标题
+- 第 1 页要有强钩子
+- 第 7 页是行动收束
 ```
 
 ## PPT / Keynote
 
 ```text
-Use $content-to-stick-figure-sketch with the slides preset to design 6 stick-figure sketch illustrations for this talk outline.
+Use $content-to-stick-figure-sketch 用 slides preset 为这个演讲大纲设计 6 张火柴人草图插图。
 
-Use cases:
-- section transition slides
-- supporting visuals beside key ideas
-- a closing action slide
+用途：
+- 章节过渡页
+- 关键观点旁图
+- 结尾行动页
 
-Requirements:
+要求：
 - 16:9
-- as little text as possible
-- the stick-figure action should read at a glance
-- avoid a PPT template look
+- 尽量无文字
+- 火柴人动作要一眼看懂
+- 情绪要克制但读得出来
+- 不要 PPT 模板感
 
-<Paste outline>
+<粘贴大纲>
 ```
 
-## SaaS Empty State
+## SaaS 空状态
 
 ```text
-Use $content-to-stick-figure-sketch with the saas-state preset to generate one stick-figure sketch illustration:
+Use $content-to-stick-figure-sketch 用 saas-state preset 生成一张火柴人草图：
 
-State: The user has not created any project yet.
+状态：用户还没有创建任何项目。
 
-Requirements:
-- white or transparent background
-- a neutral stick figure stands next to an empty folder and holds the first card
-- one brand-green accent color: #22c55e
-- no text
-- suitable for the center area of a product UI
+要求：
+- 白底或透明背景
+- 中性火柴人站在一个空文件夹旁，手里拿着第一张卡片
+- 表情要读得出一点期待和起步感
+- 一个品牌绿色点缀色：#22c55e
+- 无文字
+- 适合产品界面中间区域
 ```
 
-## Open-Source README
+## 开源 README
 
 ```text
-Use $content-to-stick-figure-sketch with the readme preset to design a 4-image stick-figure sketch shot list for this open-source README.
+Use $content-to-stick-figure-sketch 用 readme preset 为这个开源项目 README 设计 4 张火柴人草图 shot list。
 
-Scenes:
-1. Install
-2. Configure
-3. Submit an issue
-4. Open a PR
+场景：
+1. 安装
+2. 配置
+3. 提交 issue
+4. 发起 PR
 
-Requirements:
-- engineering-document tone
-- avoid a marketing-poster feel
-- each image needs a clear stick-figure action
+要求：
+- 工程文档气质
+- 不要营销海报感
+- 每张图都有明确火柴人动作
+- 每张图的情绪要服务场景，不要无表情
 ```
 
-## Tutorial / Course
+## 教程 / 课程
 
 ```text
-Use $content-to-stick-figure-sketch with the course preset to break the tutorial below into 5 stick-figure step illustrations.
+Use $content-to-stick-figure-sketch 用 course preset 把下面教程拆成 5 张火柴人步骤图。
 
-Requirements:
-- each image should match one learning action
-- 16:9 canvas
-- keep one consistent stick-figure proportion system
-- no more than 2 short labels per image
-- after the shot list, generate image 1
+要求：
+- 每张图对应一个学习动作
+- 画幅 16:9
+- 同一套火柴人比例
+- 每张图最多 2 个短标注
+- 每张图要有匹配步骤的情绪
+- 输出 shot list 后，再生成第 1 张
 
-<Paste tutorial>
+<粘贴教程>
 ```
 
-## Complex Concept
+## 复杂概念
 
 ```text
-Use $content-to-stick-figure-sketch to generate one stick-figure sketch illustration for this concept:
+Use $content-to-stick-figure-sketch 为这个概念生成一张火柴人草图：
 
-"Trust is not argued into existence. It is built by laying down evidence piece by piece."
+“信任不是说服出来的，而是证据一块一块铺出来的。”
 
-Requirements:
-- a stick figure lays evidence cards one by one to form a bridge
-- one side of the bridge is "unknown" and the other side is "trust"
-- one orange accent color
-- do not render it like a flowchart
+要求：
+- 火柴人把一块块证据卡片铺成桥
+- 桥的一端是“陌生”，另一端是“信任”
+- 火柴人从犹豫逐渐变得安心
+- 一个橙色点缀色
+- 不要画成流程图
 ```
 
-## Product Launch
+## 功能发布
 
 ```text
-Use $content-to-stick-figure-sketch to design 3 stick-figure sketch concepts for this feature launch.
-Output the concepts first. Do not generate images yet.
+Use $content-to-stick-figure-sketch 为这个功能发布设计 3 张火柴人草图方案。
+先输出方案，不要生图。
 
-Feature: Automatically turn meeting recordings into task lists.
+功能：自动把会议录音整理成任务清单。
 
-Requirements:
-- Concept A: user pain point
-- Concept B: how the feature works
-- Concept C: the after state
-- each concept should explain what the stick figure is doing
+要求：
+- 方案 A：用户痛点
+- 方案 B：功能工作方式
+- 方案 C：使用后状态
+- 每个方案都说明火柴人在做什么
+- 每个方案都说明火柴人的情绪
 ```
 
-## Edit / Redraw
+## 改图 / 重画
 
 ```text
-Use $content-to-stick-figure-sketch. This image has the right idea, but it looks too much like a flowchart.
-Please regenerate it with these changes:
+Use $content-to-stick-figure-sketch 这张图方向对，但太像流程图。
+请重生成一版：
 
-- keep the core idea
-- turn it into a natural scene
-- let the stick figure carry the main action
-- remove the big title and extra nodes
-- white background, black line art, one green accent color
+- 保留核心意思
+- 改成自然场景
+- 火柴人承担主要动作
+- 给火柴人补上清楚但克制的情绪
+- 删除大标题和多余节点
+- 白底黑线，一个绿色点缀色
 ```
