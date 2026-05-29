@@ -2,7 +2,7 @@
 
 中文 | [English](./README.en.md)
 
-这是一个适合放在 Codex 里的创作辅助 skill：把文章、文档、教程、PPT、社媒内容、开源项目说明和产品状态，转成以**中性火柴人**为默认主体的草图式解释插画。
+这是一个适合放在 Codex 里的创作辅助 skill：把文章、文档、教程、PPT、社媒内容、开源项目说明和产品状态，转成以**有情绪的中性火柴人**为默认主体的草图式解释插画。
 
 ```text
 Display name: 内容转火柴人草图
@@ -10,11 +10,11 @@ Skill ID: content-to-stick-figure-sketch
 Usage: Use $content-to-stick-figure-sketch ...
 ```
 
-这个 skill 的重点不是生成一个固定角色、吉祥物或个人作者 IP，而是把抽象内容变成更容易理解和传播的**动作场景**：一个火柴人在选择、整理、递交、修复、搭建、观察或穿过障碍。
+这个 skill 的重点不是生成一个固定角色、吉祥物或个人作者 IP，而是把抽象内容变成更容易理解和传播的**动作场景**：一个火柴人在选择、整理、递交、修复、搭建、观察或穿过障碍，并通过极简表情和姿态传达情绪。
 
 默认视觉语言：
 
-- 圆头、线条身体、简单四肢的匿名火柴人
+- 圆头、线条身体、简单四肢、带可读情绪的匿名火柴人
 - 白底或透明背景
 - 黑色线稿
 - 最多一个品牌点缀色
@@ -87,7 +87,7 @@ Use $content-to-stick-figure-sketch to read the content below. Do not generate a
 
 Please create a stick-figure sketch shot list:
 - Select only the 5 strongest visual thinking anchors
-- For each image, include: placement, canvas, theme, core idea, stick-figure action, main objects, short labels, and priority
+- For each image, include: placement, canvas, theme, core idea, stick-figure action, emotion, main objects, short labels, and priority
 - Each image should express one idea only
 - Keep the stick figure as the main subject by default
 - End by marking the best 2 images to generate first
@@ -125,9 +125,9 @@ skill 会先从内容中挑出适合视觉化的部分，例如：
 
 推荐结构：
 
-| # | Priority | Placement | Canvas | Theme | Core idea | Scene pattern | Stick-figure action | Main objects | Labels | Generate? |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | P0 | opener | 16:9 | 从混乱到路径 | 把分散任务整理成可执行路线 | Before/After | 火柴人把散落卡片排成路径 | cards / path / flag | 输入 / 路径 / 输出 | yes |
+| # | Priority | Placement | Canvas | Theme | Core idea | Scene pattern | Stick-figure action | Emotion | Main objects | Labels | Generate? |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | P0 | opener | 16:9 | 从混乱到路径 | 把分散任务整理成可执行路线 | Before/After | 火柴人把散落卡片排成路径 | 困惑后变专注 | cards / path / flag | 输入 / 路径 / 输出 | yes |
 
 优先级含义：
 
@@ -140,6 +140,7 @@ skill 会先从内容中挑出适合视觉化的部分，例如：
 生成单张图时，提示词会强调：
 
 - 中性火柴人作为主体
+- 火柴人的情绪能被一眼读懂
 - 白底或透明背景
 - 黑色线稿
 - 一个点缀色
@@ -154,6 +155,7 @@ skill 会先从内容中挑出适合视觉化的部分，例如：
 生成后用 QA 清单检查：
 
 - 火柴人是不是承担核心动作
+- 火柴人有没有可读情绪，而不是无表情站立
 - 有没有变成吉祥物、表情包、动物或复杂角色
 - 是否只有一个核心意思
 - 缩小后是否还能读懂

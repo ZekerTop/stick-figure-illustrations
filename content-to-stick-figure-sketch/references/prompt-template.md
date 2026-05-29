@@ -14,7 +14,7 @@ Canvas:
 {16:9 / 3:2 / 1:1 / 4:5 / 9:16 / transparent-background spot illustration}
 
 Visual system:
-Neutral stick figures are required by default and should be the main visual subject unless the user explicitly asks for no people. Use simple circular heads, thin black line bodies, simple arms and legs, no named character, no mascot identity, no invented species or signature character design. Clean black marker-like line art on a white or transparent-white background. Plenty of whitespace. Use only one accent color: {accent color}. The accent color should mark the main path, current step, result, warning, or focal object.
+Neutral stick figures are required by default and should be the main visual subject unless the user explicitly asks for no people. Use simple circular heads, thin black line bodies, simple arms and legs, no named character, no mascot identity, no invented species or signature character design. The stick figure must not be expressionless: give it a readable emotion through minimal eyes, eyebrows, mouth, head tilt, hand gesture, shoulder angle, and body posture. Clean black marker-like line art on a white or transparent-white background. Plenty of whitespace. Use only one accent color: {accent color}. The accent color should mark the main path, current step, result, warning, or focal object.
 
 Theme:
 {主题}
@@ -26,7 +26,7 @@ Scene pattern:
 {Before/After / Path / Hand-off / Stack / Split-Merge / Trade-off / Obstacle / Loop / Custom}
 
 Composition:
-{具体画面：火柴人在哪里、正在做什么、主要物件是什么、信息如何移动或变化}
+{具体画面：火柴人在哪里、正在做什么、是什么情绪、主要物件是什么、信息如何移动或变化}
 
 Suggested objects:
 {物件1} / {物件2} / {物件3}
@@ -38,7 +38,7 @@ Brand/accent color:
 {green / blue / orange / purple / #hex}. Use this as the only accent color.
 
 Constraints:
-One image explains one idea. Keep the composition sparse and readable at small sizes. Use at most 0-5 short labels. Avoid dense diagrams, PPT template aesthetics, complex vector illustration, 3D, photorealism, textured paper, gradients, shadows, UI screenshots, cute stickers, non-human mascots, blob mascots, filled mascot characters, named IP characters, and references to any specific artist, creator, brand, or existing illustration style.
+One image explains one idea. Keep the composition sparse and readable at small sizes. Use at most 0-5 short labels. The figure's emotion should be clear but restrained, not exaggerated like a meme sticker. Avoid dense diagrams, PPT template aesthetics, complex vector illustration, 3D, photorealism, textured paper, gradients, shadows, UI screenshots, cute stickers, non-human mascots, blob mascots, filled mascot characters, named IP characters, and references to any specific artist, creator, brand, or existing illustration style.
 ```
 
 ## 从 shot list 生成单张图
@@ -48,7 +48,7 @@ Create one standalone stick-figure sketch illustration from this selected shot:
 
 {粘贴 shot list 中的一条}
 
-Follow the selected canvas, channel, core idea, stick-figure action, main objects, labels, and accent color. Neutral stick figures must remain the main subject. Keep the image sparse, readable, and not like a PPT diagram.
+Follow the selected canvas, channel, core idea, stick-figure action, stick-figure emotion, main objects, labels, and accent color. Neutral stick figures must remain the main subject. Keep the image sparse, readable, emotionally clear, and not like a PPT diagram.
 ```
 
 ## 无文字版本
@@ -66,7 +66,7 @@ Edit the provided image. Remove most written labels and keep only these short la
 ## 改图：去 IP 化
 
 ```text
-Edit the provided image to remove any mascot or recognizable character identity. Replace the character with a neutral stick figure: circular head, line body, simple arms and legs, no filled body, no distinctive costume, no fixed expression. Preserve the same conceptual action, composition, labels, accent color, and canvas ratio.
+Edit the provided image to remove any mascot or recognizable character identity. Replace the character with a neutral stick figure: circular head, line body, simple arms and legs, no filled body, no distinctive costume, and a simple readable expression that matches the scene emotion. Preserve the same conceptual action, composition, labels, accent color, and canvas ratio.
 ```
 
 ## 改图：适配品牌色

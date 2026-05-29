@@ -7,9 +7,9 @@ Use this schema when planning illustrations before generation.
 For each candidate image, output:
 
 ```markdown
-| # | Priority | Placement | Canvas | Theme | Core idea | Scene pattern | Stick-figure action | Main objects | Labels | Generate? |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | P0 | after section X | 16:9 | ... | ... | Before/After | ... | ... | ... | yes |
+| # | Priority | Placement | Canvas | Theme | Core idea | Scene pattern | Stick-figure action | Emotion | Main objects | Labels | Generate? |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | P0 | after section X | 16:9 | ... | ... | Before/After | ... | ... | ... | ... | yes |
 ```
 
 ## Fields
@@ -21,6 +21,7 @@ For each candidate image, output:
 - `Core idea`: one sentence. If it needs two sentences, split it into two images.
 - `Scene pattern`: choose from Before/After, Path, Hand-off, Stack, Split-Merge, Trade-off, Obstacle, Loop, or Custom.
 - `Stick-figure action`: the exact action the figure performs. Avoid “standing beside”.
+- `Emotion`: the readable emotional state of the figure, such as confused, relieved, hesitant, focused, calm, or excited.
 - `Main objects`: 1-3 simple objects only.
 - `Labels`: 0-5 short labels. Prefer 0-3.
 - `Generate?`: `yes`, `maybe`, or `no`.
@@ -51,5 +52,6 @@ Choose `P2` when the image:
 
 - Do not average one image per section.
 - Prefer fewer, stronger images.
+- Give the figure a clear action and a clear emotion in every candidate image.
 - Do not generate until the best 1-3 candidates are clear, unless the user explicitly asks to generate all.
 - End every shot list with: `Recommended first generation: #...` and one short reason.

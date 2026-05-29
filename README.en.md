@@ -2,7 +2,7 @@
 
 [中文](./README.md) | English
 
-This is a Codex creative-assistance skill for turning articles, docs, tutorials, slides, social content, open-source project explainers, and product states into sketch-style explanatory illustrations with **neutral stick figures** as the default main subject.
+This is a Codex creative-assistance skill for turning articles, docs, tutorials, slides, social content, open-source project explainers, and product states into sketch-style explanatory illustrations with **emotionally expressive neutral stick figures** as the default main subject.
 
 ```text
 Display name: 内容转火柴人草图
@@ -10,11 +10,11 @@ Skill ID: content-to-stick-figure-sketch
 Usage: Use $content-to-stick-figure-sketch ...
 ```
 
-This skill is not about generating a fixed mascot, a character IP, or an imitation of one creator's signature style. It is about turning abstract ideas into easy-to-understand **action scenes**: a stick figure choosing, sorting, handing off, fixing, building, observing, or moving through an obstacle.
+This skill is not about generating a fixed mascot, a character IP, or an imitation of one creator's signature style. It is about turning abstract ideas into easy-to-understand **action scenes**: a stick figure choosing, sorting, handing off, fixing, building, observing, or moving through an obstacle while showing readable emotion through minimal expression and posture.
 
 Default visual language:
 
-- anonymous stick figures with circular heads, line bodies, and simple limbs
+- anonymous stick figures with circular heads, line bodies, simple limbs, and readable emotion
 - white or transparent background
 - black line art
 - no more than one accent color
@@ -87,7 +87,7 @@ Use $content-to-stick-figure-sketch to read the content below. Do not generate a
 
 Please create a stick-figure sketch shot list:
 - Select only the 5 strongest visual thinking anchors
-- For each image, include: placement, canvas, theme, core idea, stick-figure action, main objects, short labels, and priority
+- For each image, include: placement, canvas, theme, core idea, stick-figure action, emotion, main objects, short labels, and priority
 - Each image should express one idea only
 - Keep the stick figure as the main subject by default
 - End by marking the best 2 images to generate first
@@ -125,9 +125,9 @@ By default, the skill proposes 3-6 candidate images. Short content may only need
 
 Recommended format:
 
-| # | Priority | Placement | Canvas | Theme | Core idea | Scene pattern | Stick-figure action | Main objects | Labels | Generate? |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | P0 | opener | 16:9 | From clutter to path | Turn scattered tasks into an actionable route | Before/After | A stick figure arranges scattered cards into a path | cards / path / flag | input / path / output | yes |
+| # | Priority | Placement | Canvas | Theme | Core idea | Scene pattern | Stick-figure action | Emotion | Main objects | Labels | Generate? |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | P0 | opener | 16:9 | From clutter to path | Turn scattered tasks into an actionable route | Before/After | A stick figure arranges scattered cards into a path | confused, then focused | cards / path / flag | input / path / output | yes |
 
 Priority definitions:
 
@@ -140,6 +140,7 @@ Priority definitions:
 The prompt should emphasize:
 
 - a neutral stick figure as the main subject
+- a readable emotion through face and posture
 - white or transparent background
 - black line art
 - one accent color
@@ -154,6 +155,7 @@ Each image is generated separately unless the user explicitly wants a multi-pane
 Use the QA checklist after generation:
 
 - does the stick figure carry the core action?
+- does the stick figure show readable emotion instead of standing blankly?
 - did it turn into a mascot, meme, animal, or complex character?
 - does the image express only one core idea?
 - does it still read clearly when small?

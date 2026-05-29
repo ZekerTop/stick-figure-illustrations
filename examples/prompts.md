@@ -9,7 +9,7 @@ Use $content-to-stick-figure-sketch to read the content below. Do not generate a
 
 Please create a stick-figure sketch shot list:
 - Select only the 5 strongest visual thinking anchors
-- For each image, include: placement, canvas, theme, core idea, stick-figure action, main objects, short labels, and priority
+- For each image, include: placement, canvas, theme, core idea, stick-figure action, emotion, main objects, short labels, and priority
 - Each image should express one idea only
 - Keep the stick figure as the main subject by default
 - End by marking the best 2 images to generate first
@@ -29,6 +29,7 @@ Requirements:
 - white background with black line art
 - one green accent color
 - a neutral stick figure as the main subject
+- readable emotion through simple face marks and posture
 - no more than 3 short labels
 ```
 
@@ -42,6 +43,7 @@ Requirements:
 - 16:9 or 3:2
 - each image should show one cognitive turning point
 - the stick figure must carry the core action
+- give each stick figure a clear emotion
 - no more than 3 labels per image
 - mark the best 2 images to generate first
 
@@ -59,6 +61,7 @@ Topic: How one person turns AI into a daily workflow
 Requirements:
 - 4:5 canvas
 - one stick-figure action per page
+- a clear emotion on each page
 - one short title per page
 - page 1 needs a strong hook
 - page 7 should close with an action
