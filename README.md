@@ -1,5 +1,7 @@
 # 内容转火柴人草图 Skill
 
+中文 | [English](./README.en.md)
+
 这是一个适合放在 Codex 里的创作辅助 skill：把文章、文档、教程、PPT、社媒内容、开源项目说明和产品状态，转成以**中性火柴人**为默认主体的草图式解释插画。
 
 ```text
@@ -57,7 +59,7 @@ Usage: Use $content-to-stick-figure-sketch ...
 在 Codex 里新开一个对话，把这个 GitHub 链接发给 Codex，然后让它帮你安装：
 
 ```text
-请帮我安装这个 Codex skill：
+Please install this Codex skill:
 https://github.com/ZekerTop/content-to-stick-figure-sketch
 ```
 
@@ -81,16 +83,16 @@ cp -R ./content-to-stick-figure-sketch "${CODEX_HOME:-$HOME/.codex}/skills/"
 先让 skill 规划 shot list，不要急着生图：
 
 ```text
-Use $content-to-stick-figure-sketch 阅读下面内容，先不要生图。
+Use $content-to-stick-figure-sketch to read the content below. Do not generate any images yet.
 
-请输出一份火柴人草图 shot list：
-- 只挑真正值得视觉化的 5 个认知锚点
-- 每张图说明：放置位置、画幅、主题、核心意思、火柴人动作、主要元素、短标注、优先级
-- 每张图只表达一个意思
-- 默认火柴人作为主体
-- 最后标出最值得优先生成的 2 张
+Please create a stick-figure sketch shot list:
+- Select only the 5 strongest visual thinking anchors
+- For each image, include: placement, canvas, theme, core idea, stick-figure action, main objects, short labels, and priority
+- Each image should express one idea only
+- Keep the stick figure as the main subject by default
+- End by marking the best 2 images to generate first
 
-<粘贴内容>
+<Paste content>
 ```
 
 为什么推荐先做 shot list：
@@ -181,17 +183,17 @@ skill 会先从内容中挑出适合视觉化的部分，例如：
 示例：
 
 ```text
-Use $content-to-stick-figure-sketch 用 carousel preset 把这个主题设计成 7 页社媒轮播。
-先输出 shot list，不要生图。
+Use $content-to-stick-figure-sketch with the carousel preset to design a 7-page social carousel for this topic.
+Output the shot list first. Do not generate images yet.
 
-主题：一个人如何把 AI 变成日常工作流
+Topic: How one person turns AI into a daily workflow
 
-要求：
-- 画幅 4:5
-- 每页一个火柴人动作
-- 每页一个短标题
-- 第 1 页要有强钩子
-- 第 7 页是行动收束
+Requirements:
+- 4:5 canvas
+- one stick-figure action per page
+- one short title per page
+- page 1 needs a strong hook
+- page 7 should close with an action
 ```
 
 ## 可复制例子
@@ -199,64 +201,64 @@ Use $content-to-stick-figure-sketch 用 carousel preset 把这个主题设计成
 ### 为文章规划配图
 
 ```text
-Use $content-to-stick-figure-sketch 用 article preset 为这篇文章规划 5 张火柴人草图。
-先输出 shot list，不要生图。
+Use $content-to-stick-figure-sketch with the article preset to plan 5 stick-figure sketch illustrations for this article.
+Output the shot list first. Do not generate images yet.
 
-要求：
-- 16:9 或 3:2
-- 每张图只画一个认知转折
-- 火柴人必须承担核心动作
-- 标注最多 3 个
-- 标出最值得优先生成的 2 张
+Requirements:
+- 16:9 or 3:2
+- each image should show one cognitive turning point
+- the stick figure must carry the core action
+- no more than 3 labels per image
+- mark the best 2 images to generate first
 
-<粘贴文章>
+<Paste article>
 ```
 
 ### 生成单张观点图
 
 ```text
-Use $content-to-stick-figure-sketch 为这个观点生成一张火柴人草图：
+Use $content-to-stick-figure-sketch to generate one stick-figure sketch illustration for this idea:
 
-“真正的自动化不是少点几下，而是少做一次判断。”
+"Real automation is not about fewer clicks. It is about making one less decision."
 
-要求：
-- 画幅 16:9
-- 白底黑线
-- 一个绿色点缀色
-- 中性火柴人作为主体
-- 标注最多 3 个，短一点
+Requirements:
+- 16:9 canvas
+- white background with black line art
+- one green accent color
+- a neutral stick figure as the main subject
+- no more than 3 short labels
 ```
 
 ### 做 SaaS 空状态
 
 ```text
-Use $content-to-stick-figure-sketch 用 saas-state preset 生成一张火柴人草图：
+Use $content-to-stick-figure-sketch with the saas-state preset to generate one stick-figure sketch illustration:
 
-状态：用户还没有创建任何项目。
+State: The user has not created any project yet.
 
-要求：
-- 白底或透明背景
-- 中性火柴人站在一个空文件夹旁，手里拿着第一张卡片
-- 一个品牌绿色点缀色：#22c55e
-- 无文字
-- 适合产品界面中间区域
+Requirements:
+- white or transparent background
+- a neutral stick figure stands next to an empty folder and holds the first card
+- one brand-green accent color: #22c55e
+- no text
+- suitable for the center area of a product UI
 ```
 
 ### 给开源项目 README 规划插图
 
 ```text
-Use $content-to-stick-figure-sketch 用 readme preset 为这个开源项目 README 设计 4 张火柴人草图 shot list。
+Use $content-to-stick-figure-sketch with the readme preset to design a 4-image stick-figure sketch shot list for this open-source README.
 
-场景：
-1. 安装
-2. 配置
-3. 提交 issue
-4. 发起 PR
+Scenes:
+1. Install
+2. Configure
+3. Submit an issue
+4. Open a PR
 
-要求：
-- 工程文档气质
-- 不要营销海报感
-- 每张图都有明确火柴人动作
+Requirements:
+- engineering-document tone
+- avoid a marketing-poster feel
+- each image needs a clear stick-figure action
 ```
 
 更多示例见 [examples/prompts.md](examples/prompts.md)。
@@ -281,6 +283,7 @@ Use $content-to-stick-figure-sketch 用 readme preset 为这个开源项目 READ
 ```text
 content-to-stick-figure-sketch/
 ├── README.md
+├── README.en.md
 ├── examples/
 │   └── prompts.md
 ├── content-to-stick-figure-sketch/
