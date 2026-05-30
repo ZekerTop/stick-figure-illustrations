@@ -1,5 +1,5 @@
 ---
-name: content-to-stick-figure-sketch
+name: stick-figure-illustrations
 description: |
   Turn creator content into emotionally expressive neutral stick-figure sketch illustrations for
   articles, newsletters, social carousels, slides, product docs, tutorials, courses, open-source
@@ -8,7 +8,7 @@ description: |
   color, and no mascot identity, recognizable character IP, or imitation of specific third-party styles.
 ---
 
-# 内容转火柴人草图
+# Stick Figure Illustrations
 
 ## 核心定位
 

@@ -5,7 +5,7 @@
 ## 最佳起手式
 
 ```text
-Use $content-to-stick-figure-sketch 阅读下面内容，先不要生图。
+Use $stick-figure-illustrations 阅读下面内容，先不要生图。
 
 请输出一份火柴人草图 shot list：
 - 只挑真正值得视觉化的 5 个认知锚点
@@ -20,7 +20,7 @@ Use $content-to-stick-figure-sketch 阅读下面内容，先不要生图。
 ## 生成单张观点图
 
 ```text
-Use $content-to-stick-figure-sketch 为这个观点生成一张火柴人草图：
+Use $stick-figure-illustrations 为这个观点生成一张火柴人草图：
 
 “真正的自动化不是少点几下，而是少做一次判断。”
 
@@ -36,7 +36,7 @@ Use $content-to-stick-figure-sketch 为这个观点生成一张火柴人草图�
 ## 文章配图
 
 ```text
-Use $content-to-stick-figure-sketch 用 article preset 为这篇文章规划 5 张火柴人草图。
+Use $stick-figure-illustrations 用 article preset 为这篇文章规划 5 张火柴人草图。
 先输出 shot list，不要生图。
 
 要求：
@@ -53,7 +53,7 @@ Use $content-to-stick-figure-sketch 用 article preset 为这篇文章规划 5 �
 ## 社媒轮播
 
 ```text
-Use $content-to-stick-figure-sketch 用 carousel preset 把这个主题设计成 7 页社媒轮播。
+Use $stick-figure-illustrations 用 carousel preset 把这个主题设计成 7 页社媒轮播。
 先输出 shot list，不要生图。
 
 主题：一个人如何把 AI 变成日常工作流
@@ -70,7 +70,7 @@ Use $content-to-stick-figure-sketch 用 carousel preset 把这个主题设计成
 ## PPT / Keynote
 
 ```text
-Use $content-to-stick-figure-sketch 用 slides preset 为这个演讲大纲设计 6 张火柴人草图插图。
+Use $stick-figure-illustrations 用 slides preset 为这个演讲大纲设计 6 张火柴人草图插图。
 
 用途：
 - 章节过渡页
@@ -90,7 +90,7 @@ Use $content-to-stick-figure-sketch 用 slides preset 为这个演讲大纲设�
 ## SaaS 空状态
 
 ```text
-Use $content-to-stick-figure-sketch 用 saas-state preset 生成一张火柴人草图：
+Use $stick-figure-illustrations 用 saas-state preset 生成一张火柴人草图：
 
 状态：用户还没有创建任何项目。
 
@@ -106,7 +106,7 @@ Use $content-to-stick-figure-sketch 用 saas-state preset 生成一张火柴人�
 ## 开源 README
 
 ```text
-Use $content-to-stick-figure-sketch 用 readme preset 为这个开源项目 README 设计 4 张火柴人草图 shot list。
+Use $stick-figure-illustrations 用 readme preset 为这个开源项目 README 设计 4 张火柴人草图 shot list。
 
 场景：
 1. 安装
@@ -124,7 +124,7 @@ Use $content-to-stick-figure-sketch 用 readme preset 为这个开源项目 READ
 ## 教程 / 课程
 
 ```text
-Use $content-to-stick-figure-sketch 用 course preset 把下面教程拆成 5 张火柴人步骤图。
+Use $stick-figure-illustrations 用 course preset 把下面教程拆成 5 张火柴人步骤图。
 
 要求：
 - 每张图对应一个学习动作
@@ -140,7 +140,7 @@ Use $content-to-stick-figure-sketch 用 course preset 把下面教程拆成 5 �
 ## 复杂概念
 
 ```text
-Use $content-to-stick-figure-sketch 为这个概念生成一张火柴人草图：
+Use $stick-figure-illustrations 为这个概念生成一张火柴人草图：
 
 “信任不是说服出来的，而是证据一块一块铺出来的。”
 
@@ -155,7 +155,7 @@ Use $content-to-stick-figure-sketch 为这个概念生成一张火柴人草图�
 ## 功能发布
 
 ```text
-Use $content-to-stick-figure-sketch 为这个功能发布设计 3 张火柴人草图方案。
+Use $stick-figure-illustrations 为这个功能发布设计 3 张火柴人草图方案。
 先输出方案，不要生图。
 
 功能：自动把会议录音整理成任务清单。
@@ -171,7 +171,7 @@ Use $content-to-stick-figure-sketch 为这个功能发布设计 3 张火柴人�
 ## 改图 / 重画
 
 ```text
-Use $content-to-stick-figure-sketch 这张图方向对，但太像流程图。
+Use $stick-figure-illustrations 这张图方向对，但太像流程图。
 请重生成一版：
 
 - 保留核心意思

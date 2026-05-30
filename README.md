@@ -1,13 +1,13 @@
-# 内容转火柴人草图 Skill
+# Stick Figure Illustrations Skill
 
 中文 | [English](./README.en.md)
 
 这是一个适合放在 Codex 里的创作辅助 skill：把文章、文档、教程、PPT、社媒内容、开源项目说明和产品状态，转成以**有情绪的中性火柴人**为默认主体的草图式解释插画。
 
 ```text
-Display name: Content to Stick Figure Sketch
-Skill ID: content-to-stick-figure-sketch
-Usage: Use $content-to-stick-figure-sketch ...
+Display name: Stick Figure Illustrations
+Skill ID: stick-figure-illustrations
+Usage: Use $stick-figure-illustrations ...
 ```
 
 这个 skill 的重点不是生成一个固定角色、吉祥物或个人作者 IP，而是把抽象内容变成更容易理解和传播的**动作场景**：一个火柴人在选择、整理、递交、修复、搭建、观察或穿过障碍，并通过极简表情和姿态传达情绪。
@@ -60,7 +60,7 @@ Usage: Use $content-to-stick-figure-sketch ...
 
 ```text
 请帮我安装这个 Codex skill：
-https://github.com/ZekerTop/content-to-stick-figure-sketch
+https://github.com/ZekerTop/stick-figure-illustrations
 ```
 
 Codex 会读取这个仓库里的 skill 文件，并把它安装到本地 skills 目录。安装完成后，按 Codex 的提示刷新或重启 Codex。
@@ -73,7 +73,7 @@ Codex 会读取这个仓库里的 skill 文件，并把它安装到本地 skills
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-cp -R ./content-to-stick-figure-sketch "${CODEX_HOME:-$HOME/.codex}/skills/"
+cp -R ./stick-figure-illustrations "${CODEX_HOME:-$HOME/.codex}/skills/"
 ```
 
 然后重启 Codex。
@@ -83,7 +83,7 @@ cp -R ./content-to-stick-figure-sketch "${CODEX_HOME:-$HOME/.codex}/skills/"
 先让 skill 规划 shot list，不要急着生图：
 
 ```text
-Use $content-to-stick-figure-sketch 阅读下面内容，先不要生图。
+Use $stick-figure-illustrations 阅读下面内容，先不要生图。
 
 请输出一份火柴人草图 shot list：
 - 只挑真正值得视觉化的 5 个认知锚点
@@ -185,7 +185,7 @@ skill 会先从内容中挑出适合视觉化的部分，例如：
 示例：
 
 ```text
-Use $content-to-stick-figure-sketch 用 carousel preset 把这个主题设计成 7 页社媒轮播。
+Use $stick-figure-illustrations 用 carousel preset 把这个主题设计成 7 页社媒轮播。
 先输出 shot list，不要生图。
 
 主题：一个人如何把 AI 变成日常工作流
@@ -204,7 +204,7 @@ Use $content-to-stick-figure-sketch 用 carousel preset 把这个主题设计成
 ### 为文章规划配图
 
 ```text
-Use $content-to-stick-figure-sketch 用 article preset 为这篇文章规划 5 张火柴人草图。
+Use $stick-figure-illustrations 用 article preset 为这篇文章规划 5 张火柴人草图。
 先输出 shot list，不要生图。
 
 要求：
@@ -221,7 +221,7 @@ Use $content-to-stick-figure-sketch 用 article preset 为这篇文章规划 5 �
 ### 生成单张观点图
 
 ```text
-Use $content-to-stick-figure-sketch 为这个观点生成一张火柴人草图：
+Use $stick-figure-illustrations 为这个观点生成一张火柴人草图：
 
 “真正的自动化不是少点几下，而是少做一次判断。”
 
@@ -237,7 +237,7 @@ Use $content-to-stick-figure-sketch 为这个观点生成一张火柴人草图�
 ### 做 SaaS 空状态
 
 ```text
-Use $content-to-stick-figure-sketch 用 saas-state preset 生成一张火柴人草图：
+Use $stick-figure-illustrations 用 saas-state preset 生成一张火柴人草图：
 
 状态：用户还没有创建任何项目。
 
@@ -253,7 +253,7 @@ Use $content-to-stick-figure-sketch 用 saas-state preset 生成一张火柴人�
 ### 给开源项目 README 规划插图
 
 ```text
-Use $content-to-stick-figure-sketch 用 readme preset 为这个开源项目 README 设计 4 张火柴人草图 shot list。
+Use $stick-figure-illustrations 用 readme preset 为这个开源项目 README 设计 4 张火柴人草图 shot list。
 
 场景：
 1. 安装
@@ -288,13 +288,13 @@ Use $content-to-stick-figure-sketch 用 readme preset 为这个开源项目 READ
 ## 仓库结构
 
 ```text
-content-to-stick-figure-sketch/
+stick-figure-illustrations/
 ├── README.md
 ├── README.en.md
 ├── examples/
 │   ├── prompts.md
 │   └── prompts.en.md
-├── content-to-stick-figure-sketch/
+├── stick-figure-illustrations/
 │   ├── SKILL.md
 │   ├── agents/
 │   │   └── openai.yaml
@@ -313,7 +313,7 @@ content-to-stick-figure-sketch/
 
 | 文件 | 作用 |
 |---|---|
-| `content-to-stick-figure-sketch/SKILL.md` | skill 主入口，定义触发条件、硬性边界和工作流 |
+| `stick-figure-illustrations/SKILL.md` | skill 主入口，定义触发条件、硬性边界和工作流 |
 | `references/visual-system.md` | 火柴人视觉规范、色彩、文字和禁忌 |
 | `references/use-cases.md` | 不同场景的推荐输出形式 |
 | `references/presets.md` | preset 的画幅、数量、密度和目标 |
@@ -333,8 +333,8 @@ content-to-stick-figure-sketch/
 
 新增 preset 时，至少同步更新：
 
-- `content-to-stick-figure-sketch/references/presets.md`
-- `content-to-stick-figure-sketch/references/use-cases.md`
+- `stick-figure-illustrations/references/presets.md`
+- `stick-figure-illustrations/references/use-cases.md`
 - `examples/prompts.md`
 - `README.md`
 

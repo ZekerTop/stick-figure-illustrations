@@ -5,7 +5,7 @@ Copy these prompts into Codex and replace the placeholders.
 ## Best Starting Prompt
 
 ```text
-Use $content-to-stick-figure-sketch to read the content below. Do not generate any images yet.
+Use $stick-figure-illustrations to read the content below. Do not generate any images yet.
 
 Please create a stick-figure sketch shot list:
 - Select only the 5 strongest visual thinking anchors
@@ -20,7 +20,7 @@ Please create a stick-figure sketch shot list:
 ## Generate From One Idea
 
 ```text
-Use $content-to-stick-figure-sketch to generate one stick-figure sketch illustration for this idea:
+Use $stick-figure-illustrations to generate one stick-figure sketch illustration for this idea:
 
 "Real automation is not about fewer clicks. It is about making one less decision."
 
@@ -36,7 +36,7 @@ Requirements:
 ## Article Illustrations
 
 ```text
-Use $content-to-stick-figure-sketch with the article preset to plan 5 stick-figure sketch illustrations for this article.
+Use $stick-figure-illustrations with the article preset to plan 5 stick-figure sketch illustrations for this article.
 Output the shot list first. Do not generate images yet.
 
 Requirements:
@@ -53,7 +53,7 @@ Requirements:
 ## Social Carousel
 
 ```text
-Use $content-to-stick-figure-sketch with the carousel preset to design a 7-page social carousel for this topic.
+Use $stick-figure-illustrations with the carousel preset to design a 7-page social carousel for this topic.
 Output the shot list first. Do not generate images yet.
 
 Topic: How one person turns AI into a daily workflow
@@ -70,7 +70,7 @@ Requirements:
 ## PPT / Keynote
 
 ```text
-Use $content-to-stick-figure-sketch with the slides preset to design 6 stick-figure sketch illustrations for this talk outline.
+Use $stick-figure-illustrations with the slides preset to design 6 stick-figure sketch illustrations for this talk outline.
 
 Use cases:
 - section transition slides
@@ -89,7 +89,7 @@ Requirements:
 ## SaaS Empty State
 
 ```text
-Use $content-to-stick-figure-sketch with the saas-state preset to generate one stick-figure sketch illustration:
+Use $stick-figure-illustrations with the saas-state preset to generate one stick-figure sketch illustration:
 
 State: The user has not created any project yet.
 
@@ -104,7 +104,7 @@ Requirements:
 ## Open-Source README
 
 ```text
-Use $content-to-stick-figure-sketch with the readme preset to design a 4-image stick-figure sketch shot list for this open-source README.
+Use $stick-figure-illustrations with the readme preset to design a 4-image stick-figure sketch shot list for this open-source README.
 
 Scenes:
 1. Install
@@ -121,7 +121,7 @@ Requirements:
 ## Tutorial / Course
 
 ```text
-Use $content-to-stick-figure-sketch with the course preset to break the tutorial below into 5 stick-figure step illustrations.
+Use $stick-figure-illustrations with the course preset to break the tutorial below into 5 stick-figure step illustrations.
 
 Requirements:
 - each image should match one learning action
@@ -136,7 +136,7 @@ Requirements:
 ## Complex Concept
 
 ```text
-Use $content-to-stick-figure-sketch to generate one stick-figure sketch illustration for this concept:
+Use $stick-figure-illustrations to generate one stick-figure sketch illustration for this concept:
 
 "Trust is not argued into existence. It is built by laying down evidence piece by piece."
 
@@ -150,7 +150,7 @@ Requirements:
 ## Product Launch
 
 ```text
-Use $content-to-stick-figure-sketch to design 3 stick-figure sketch concepts for this feature launch.
+Use $stick-figure-illustrations to design 3 stick-figure sketch concepts for this feature launch.
 Output the concepts first. Do not generate images yet.
 
 Feature: Automatically turn meeting recordings into task lists.
@@ -165,7 +165,7 @@ Requirements:
 ## Edit / Redraw
 
 ```text
-Use $content-to-stick-figure-sketch. This image has the right idea, but it looks too much like a flowchart.
+Use $stick-figure-illustrations. This image has the right idea, but it looks too much like a flowchart.
 Please regenerate it with these changes:
 
 - keep the core idea

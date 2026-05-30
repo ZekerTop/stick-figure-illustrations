@@ -1,0 +1,6 @@
+interface:
+  display_name: "Stick Figure Illustrations"
+  short_description: "Turn creator content into emotionally expressive stick-figure sketch illustrations"
+  default_prompt: "Use $stick-figure-illustrations to plan and generate emotionally expressive stick-figure sketch illustrations for this creator content."
+policy:
+  allow_implicit_invocation: true

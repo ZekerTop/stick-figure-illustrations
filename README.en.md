@@ -1,13 +1,13 @@
-# Content-to-Stick-Figure-Sketch Skill
+# Stick Figure Illustrations Skill
 
 [中文](./README.md) | English
 
 This is a Codex creative-assistance skill for turning articles, docs, tutorials, slides, social content, open-source project explainers, and product states into sketch-style explanatory illustrations with **emotionally expressive neutral stick figures** as the default main subject.
 
 ```text
-Display name: Content to Stick Figure Sketch
-Skill ID: content-to-stick-figure-sketch
-Usage: Use $content-to-stick-figure-sketch ...
+Display name: Stick Figure Illustrations
+Skill ID: stick-figure-illustrations
+Usage: Use $stick-figure-illustrations ...
 ```
 
 This skill is not about generating a fixed mascot, a character IP, or an imitation of one creator's signature style. It is about turning abstract ideas into easy-to-understand **action scenes**: a stick figure choosing, sorting, handing off, fixing, building, observing, or moving through an obstacle while showing readable emotion through minimal expression and posture.
@@ -60,7 +60,7 @@ Start a new conversation in Codex, paste this GitHub link, and ask Codex to inst
 
 ```text
 Please install this Codex skill:
-https://github.com/ZekerTop/content-to-stick-figure-sketch
+https://github.com/ZekerTop/stick-figure-illustrations
 ```
 
 Codex will read the skill files in this repository and install them into the local skills directory. After installation, follow Codex's prompt to refresh or restart Codex.
@@ -73,7 +73,7 @@ Copy the skill folder into your Codex skills directory:
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-cp -R ./content-to-stick-figure-sketch "${CODEX_HOME:-$HOME/.codex}/skills/"
+cp -R ./stick-figure-illustrations "${CODEX_HOME:-$HOME/.codex}/skills/"
 ```
 
 Then restart Codex.
@@ -83,7 +83,7 @@ Then restart Codex.
 Start by asking the skill to plan a shot list before generating images:
 
 ```text
-Use $content-to-stick-figure-sketch to read the content below. Do not generate any images yet.
+Use $stick-figure-illustrations to read the content below. Do not generate any images yet.
 
 Please create a stick-figure sketch shot list:
 - Select only the 5 strongest visual thinking anchors
@@ -185,7 +185,7 @@ Presets make the output more stable:
 Example:
 
 ```text
-Use $content-to-stick-figure-sketch with the carousel preset to design a 7-page social carousel for this topic.
+Use $stick-figure-illustrations with the carousel preset to design a 7-page social carousel for this topic.
 Output the shot list first. Do not generate images yet.
 
 Topic: How one person turns AI into a daily workflow
@@ -203,7 +203,7 @@ Requirements:
 ### Plan illustrations for an article
 
 ```text
-Use $content-to-stick-figure-sketch with the article preset to plan 5 stick-figure sketch illustrations for this article.
+Use $stick-figure-illustrations with the article preset to plan 5 stick-figure sketch illustrations for this article.
 Output the shot list first. Do not generate images yet.
 
 Requirements:
@@ -219,7 +219,7 @@ Requirements:
 ### Generate one idea illustration
 
 ```text
-Use $content-to-stick-figure-sketch to generate one stick-figure sketch illustration for this idea:
+Use $stick-figure-illustrations to generate one stick-figure sketch illustration for this idea:
 
 "Real automation is not about fewer clicks. It is about making one less decision."
 
@@ -234,7 +234,7 @@ Requirements:
 ### Create a SaaS empty state
 
 ```text
-Use $content-to-stick-figure-sketch with the saas-state preset to generate one stick-figure sketch illustration:
+Use $stick-figure-illustrations with the saas-state preset to generate one stick-figure sketch illustration:
 
 State: The user has not created any project yet.
 
@@ -249,7 +249,7 @@ Requirements:
 ### Plan README illustrations for an open-source project
 
 ```text
-Use $content-to-stick-figure-sketch with the readme preset to design a 4-image stick-figure sketch shot list for this open-source README.
+Use $stick-figure-illustrations with the readme preset to design a 4-image stick-figure sketch shot list for this open-source README.
 
 Scenes:
 1. Install
@@ -283,13 +283,13 @@ Each image should use one base pattern:
 ## Repository Structure
 
 ```text
-content-to-stick-figure-sketch/
+stick-figure-illustrations/
 ├── README.md
 ├── README.en.md
 ├── examples/
 │   ├── prompts.md
 │   └── prompts.en.md
-├── content-to-stick-figure-sketch/
+├── stick-figure-illustrations/
 │   ├── SKILL.md
 │   ├── agents/
 │   │   └── openai.yaml
@@ -308,7 +308,7 @@ content-to-stick-figure-sketch/
 
 | File | Purpose |
 |---|---|
-| `content-to-stick-figure-sketch/SKILL.md` | skill entry point, trigger conditions, hard boundaries, and workflow |
+| `stick-figure-illustrations/SKILL.md` | skill entry point, trigger conditions, hard boundaries, and workflow |
 | `references/visual-system.md` | visual rules, color, text, and anti-patterns |
 | `references/use-cases.md` | recommended output shapes for different scenarios |
 | `references/presets.md` | canvas, count, density, and goals for each preset |
@@ -328,8 +328,8 @@ When you update this skill, keep these three things aligned first:
 
 When adding a new preset, update at least:
 
-- `content-to-stick-figure-sketch/references/presets.md`
-- `content-to-stick-figure-sketch/references/use-cases.md`
+- `stick-figure-illustrations/references/presets.md`
+- `stick-figure-illustrations/references/use-cases.md`
 - `examples/prompts.md`
 - `README.md`
 - `README.en.md`
