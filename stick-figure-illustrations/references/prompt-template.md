@@ -11,10 +11,10 @@ Purpose:
 {article body illustration / newsletter header / social carousel page / slide spot illustration / product doc empty state / tutorial step / open-source README illustration / SaaS state illustration}
 
 Canvas:
-{16:9 / 3:2 / 1:1 / 4:5 / 9:16 / transparent-background spot illustration}
+{16:9 by default unless the user or selected preset specifies another canvas}
 
 Visual system:
-Neutral stick figures are required by default and should be the main visual subject unless the user explicitly asks for no people. Use simple circular heads, thin black line bodies, simple arms and legs, no named character, no mascot identity, no invented species or signature character design. The stick figure must not be expressionless: give it a readable emotion through minimal eyes, eyebrows, mouth, head tilt, hand gesture, shoulder angle, and body posture. Clean black marker-like line art on a white or transparent-white background. Plenty of whitespace. Use only one accent color: {accent color}. The accent color should mark the main path, current step, result, warning, or focal object.
+Neutral stick figures are required by default and should be the main visual subject unless the user explicitly asks for no people. Use simple circular heads, thin black line bodies, simple arms and legs, no named character, no mascot identity, no invented species or signature character design. The stick figure must not be expressionless: give it a readable emotion through minimal eyes, eyebrows, mouth, head tilt, hand gesture, shoulder angle, and body posture. Clean black marker-like line art on a white or transparent-white background. Plenty of whitespace. Use only one restrained accent color: {accent color or auto-selected calm accent}. The accent color should mark the main path, current step, result, warning, or focal object.
 
 Theme:
 {主题}
@@ -32,13 +32,13 @@ Suggested objects:
 {物件1} / {物件2} / {物件3}
 
 Optional labels:
-{短标注1} / {短标注2} / {短标注3} / {可选短标注4}
+{按内容需要决定；可以无文字、少量短标注，或在步骤/对比/教程场景中更丰富}
 
 Brand/accent color:
-{green / blue / orange / purple / #hex}. Use this as the only accent color.
+{user-provided brand color, or auto-select one calm accent color}. Use this as the only accent color.
 
 Constraints:
-One image explains one idea. Keep the composition sparse and readable at small sizes. Use at most 0-5 short labels. The figure's emotion should be clear but restrained, not exaggerated like a meme sticker. Avoid dense diagrams, PPT template aesthetics, complex vector illustration, 3D, photorealism, textured paper, gradients, shadows, UI screenshots, cute stickers, non-human mascots, blob mascots, filled mascot characters, named IP characters, and references to any specific artist, creator, brand, or existing illustration style.
+One image explains one idea. Keep the composition readable at small sizes. Labels should serve the idea: default to concise labels, use no text when possible, and allow richer labels only when the scene genuinely needs steps, contrast, or explanation. The figure's emotion should be clear but restrained, not exaggerated like a meme sticker. Avoid dense diagrams, PPT template aesthetics, complex vector illustration, 3D, photorealism, textured paper, gradients, shadows, UI screenshots, cute stickers, non-human mascots, blob mascots, filled mascot characters, named IP characters, and references to any specific artist, creator, brand, or existing illustration style.
 ```
 
 ## 从 shot list 生成单张图

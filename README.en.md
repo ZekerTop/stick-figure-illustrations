@@ -15,12 +15,16 @@ This skill is not about generating a fixed mascot, a character IP, or an imitati
 Default visual language:
 
 - anonymous stick figures with circular heads, line bodies, simple limbs, and readable emotion
+- `16:9` canvas by default when the user does not specify another size
 - white or transparent background
 - black line art
-- no more than one accent color
+- one restrained accent color, selected automatically when the user does not provide one
 - plenty of whitespace
 - one core idea per image
+- labels are content-driven: concise by default, richer only when useful
 - no imitation of any specific creator, brand, IP, illustrator, or public reference style
+
+Users do not need to repeat these baseline requirements. They can provide only the idea, article, scene, or message they want to visualize; the skill applies the default canvas, line art, background, accent color, stick-figure subject, and emotion rules automatically.
 
 ## What It Is Good For
 
@@ -89,7 +93,6 @@ Please create a stick-figure sketch shot list:
 - Select only the 5 strongest visual thinking anchors
 - For each image, include: placement, canvas, theme, core idea, stick-figure action, emotion, main objects, short labels, and priority
 - Each image should express one idea only
-- Keep the stick figure as the main subject by default
 - End by marking the best 2 images to generate first
 
 <Paste content>
@@ -185,15 +188,15 @@ Presets make the output more stable:
 
 | Preset | Purpose | Default count | Canvas | Focus |
 |---|---|---:|---|---|
-| `article` | blog posts, articles, long-form notes | 3-6 | `16:9` / `3:2` | key cognitive turns |
-| `newsletter` | emails, weekly digests, curated notes | 1-3 | `2:1` / `16:9` | lightweight pacing |
+| `article` | blog posts, articles, long-form notes | 3-6 | default `16:9` | key cognitive turns |
+| `newsletter` | emails, weekly digests, curated notes | 1-3 | default `16:9` | lightweight pacing |
 | `carousel` | social carousels | 5-8 | `4:5` / `1:1` | one action per page |
 | `slides` | PPT, Keynote, talks | 3-8 | `16:9` | support the idea without stealing hierarchy |
-| `product-doc` | product docs, help center content | 2-5 | `16:9` / `3:2` / spot | user tasks and system states |
+| `product-doc` | product docs, help center content | 2-5 | default `16:9` | user tasks and system states |
 | `saas-state` | empty, error, permission, loading, success states | 1 | `1:1` / `3:2` / transparent spot | no text, UI-friendly |
 | `course` | tutorials, courses, handouts | 4-10 | `16:9` / `4:3` | learning actions |
-| `readme` | open-source README, contribution guide, release notes | 2-4 | `16:9` / `2:1` | engineering-doc tone |
-| `thumbnail` | video, podcast, event, article-cover concepts | 1-3 | `16:9` / `1:1` | strong metaphor, not final poster art |
+| `readme` | open-source README, contribution guide, release notes | 2-4 | default `16:9` | engineering-doc tone |
+| `thumbnail` | video, podcast, event, article-cover concepts | 1-3 | default `16:9` | strong metaphor, not final poster art |
 
 Example:
 
@@ -220,11 +223,9 @@ Use $stick-figure-illustrations with the article preset to plan 5 stick-figure s
 Output the shot list first. Do not generate images yet.
 
 Requirements:
-- 16:9 or 3:2
 - improve the article's visual feel and reading rhythm; do not add illustrations just to add them
 - each image should show one cognitive turning point
-- the stick figure must carry the core action
-- no more than 3 labels per image
+- labels should be content-driven and concise by default
 - use fewer than 5 images if there are not enough good placements
 - mark the best 2 images to generate first
 
@@ -246,10 +247,8 @@ Please complete this directly:
 7. If images are not generated directly, end with a `Next step` prompt, such as: Generate #1 / Adjust #1 / Do not generate yet
 
 Requirements:
-- 16:9 or 3:2
 - each image should express one idea only
-- the stick figure must carry the core action, with clear but restrained emotion
-- no more than 3 labels; generate a no-text version when useful
+- labels should be content-driven; generate a no-text version when useful
 - if working in a workspace, save images to assets/<article-slug>-illustrations/
 
 <Paste article>
@@ -261,13 +260,6 @@ Requirements:
 Use $stick-figure-illustrations to generate one stick-figure sketch illustration for this idea:
 
 "Real automation is not about fewer clicks. It is about making one less decision."
-
-Requirements:
-- 16:9 canvas
-- white background with black line art
-- one green accent color
-- a neutral stick figure as the main subject
-- no more than 3 short labels
 ```
 
 ### Create a SaaS empty state

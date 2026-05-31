@@ -12,7 +12,6 @@ Please create a stick-figure sketch shot list:
 - Improve visual feel, reading rhythm, or understanding; do not add images just to add them
 - For each image, include: placement, canvas, theme, core idea, stick-figure action, emotion, main objects, short labels, and priority
 - Each image should express one idea only
-- Keep the stick figure as the main subject by default
 - Use fewer than 5 images if there are not enough good placements
 - End by marking the best 2 images to generate first
 
@@ -25,14 +24,6 @@ Please create a stick-figure sketch shot list:
 Use $stick-figure-illustrations to generate one stick-figure sketch illustration for this idea:
 
 "Real automation is not about fewer clicks. It is about making one less decision."
-
-Requirements:
-- 16:9 canvas
-- white background with black line art
-- one green accent color
-- a neutral stick figure as the main subject
-- readable emotion through simple face marks and posture
-- no more than 3 short labels
 ```
 
 ## Article Illustrations
@@ -42,12 +33,9 @@ Use $stick-figure-illustrations with the article preset to plan 5 stick-figure s
 Output the shot list first. Do not generate images yet.
 
 Requirements:
-- 16:9 or 3:2
 - improve the article's visual feel and reading rhythm; do not add illustrations just to add them
 - each image should show one cognitive turning point
-- the stick figure must carry the core action
-- give each stick figure a clear emotion
-- no more than 3 labels per image
+- labels should be content-driven and concise by default
 - use fewer than 5 images if there are not enough good placements
 - mark the best 2 images to generate first
 - end with a Next step block listing replies I can copy, such as: Generate #1 / Generate #1 and #2 / Adjust #1 / Do not generate yet
@@ -70,10 +58,8 @@ Please complete this directly:
 7. If images are not generated directly, end with a Next step block telling me I can reply: Generate #1 / Adjust #1 / Do not generate yet
 
 Requirements:
-- 16:9 or 3:2
 - each image should express one idea only
-- the stick figure must carry the core action, with clear but restrained emotion
-- no more than 3 labels; generate a no-text version when useful
+- labels should be content-driven; generate a no-text version when useful
 - if working in a workspace, save images to assets/<article-slug>-illustrations/
 
 <Paste article>

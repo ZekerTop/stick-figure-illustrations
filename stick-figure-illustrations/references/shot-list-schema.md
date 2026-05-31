@@ -28,14 +28,14 @@ Next step:
 
 - `Priority`: `P0` for must-generate, `P1` for useful, `P2` for optional.
 - `Placement`: where this image belongs, such as opener, after a paragraph, slide 3, carousel page 2, empty state, README section.
-- `Canvas`: `16:9`, `3:2`, `1:1`, `4:5`, `9:16`, `2:1`, or transparent spot illustration.
+- `Canvas`: default to `16:9` unless the user or selected preset specifies another canvas.
 - `Theme`: short title for internal planning, not necessarily text in the image.
 - `Core idea`: one sentence. If it needs two sentences, split it into two images.
 - `Scene pattern`: choose from Before/After, Path, Hand-off, Stack, Split-Merge, Trade-off, Obstacle, Loop, or Custom.
 - `Stick-figure action`: the exact action the figure performs. Avoid “standing beside”.
 - `Emotion`: the readable emotional state of the figure, such as confused, relieved, hesitant, focused, calm, or excited.
 - `Main objects`: 1-3 simple objects only.
-- `Labels`: 0-5 short labels. Prefer 0-3.
+- `Labels`: content-driven. Prefer concise labels by default; use richer labels only when the scene needs steps, contrast, or explanation.
 - `Generate?`: `yes`, `maybe`, or `no`.
 
 ## Priority Rules
