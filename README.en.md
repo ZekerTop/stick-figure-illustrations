@@ -138,6 +138,16 @@ Priority definitions:
 - `P1`: useful; improves pacing or support
 - `P2`: optional; likely decorative or repetitive
 
+Every shot list should end with a `Next step` prompt so the user knows what to reply:
+
+```text
+Next step:
+- Reply "Generate #1"
+- Reply "Generate #1 and #2"
+- Reply "Adjust #1: no text, use blue accent"
+- Reply "Do not generate yet; re-check placements"
+```
+
 ### 3. Generate one selected image at a time
 
 The prompt should emphasize:
@@ -233,6 +243,7 @@ Please complete this directly:
 4. Generate the P0/P1 images and show them directly
 5. Provide Markdown insertion code for each image
 6. Explain in one sentence why the image makes that spot easier to read
+7. If images are not generated directly, end with a `Next step` prompt, such as: Generate #1 / Adjust #1 / Do not generate yet
 
 Requirements:
 - 16:9 or 3:2

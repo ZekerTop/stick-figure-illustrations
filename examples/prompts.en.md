@@ -50,6 +50,7 @@ Requirements:
 - no more than 3 labels per image
 - use fewer than 5 images if there are not enough good placements
 - mark the best 2 images to generate first
+- end with a Next step block listing replies I can copy, such as: Generate #1 / Generate #1 and #2 / Adjust #1 / Do not generate yet
 
 <Paste article>
 ```
@@ -66,6 +67,7 @@ Please complete this directly:
 4. Generate the P0/P1 images and show them directly
 5. Provide Markdown insertion code for each image
 6. Explain in one sentence why the image makes that spot easier to read
+7. If images are not generated directly, end with a Next step block telling me I can reply: Generate #1 / Adjust #1 / Do not generate yet
 
 Requirements:
 - 16:9 or 3:2

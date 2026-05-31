@@ -12,6 +12,18 @@ For each candidate image, output:
 | 1 | P0 | after section X | 16:9 | ... | ... | Before/After | ... | ... | ... | ... | yes |
 ```
 
+After the table, always add a next-step block:
+
+```markdown
+Recommended first generation: #1, because ...
+
+Next step:
+- Reply `Generate #1`
+- Reply `Generate #1 and #2`
+- Reply `Adjust #1: no text, use blue accent`
+- Reply `Do not generate yet; re-check placements`
+```
+
 ## Fields
 
 - `Priority`: `P0` for must-generate, `P1` for useful, `P2` for optional.
@@ -57,4 +69,5 @@ Choose `P2` when the image:
 - If no candidate improves reading rhythm, understanding, or memorability, recommend no image instead of padding the list.
 - Give the figure a clear action and a clear emotion in every candidate image.
 - Do not generate until the best 1-3 candidates are clear, unless the user explicitly asks to generate all.
-- End every shot list with: `Recommended first generation: #...` and one short reason.
+- End every shot list with `Recommended first generation: #...` and a `Next step` block with copyable user replies.
+- If no image is recommended, the `Next step` block should still tell the user what to do, such as `Do not generate; keep the article as-is` or `Review another draft`.
