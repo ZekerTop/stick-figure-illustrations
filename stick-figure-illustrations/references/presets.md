@@ -7,7 +7,7 @@ Use presets to choose the right canvas, density, labels, and delivery style.
 - Use for: blog posts, essays, long-form notes.
 - Canvas: default `16:9`; use `3:2` only when requested.
 - Default count: 3-6.
-- Labels: content-driven, concise by default.
+- Labels: content-driven, expressive when useful.
 - Best patterns: Before/After, Obstacle, Trade-off, Loop.
 - Goal: help the reader pause at important cognitive turns.
 
@@ -16,7 +16,7 @@ Use presets to choose the right canvas, density, labels, and delivery style.
 - Use for: email essays, weekly updates, curated digests.
 - Canvas: default `16:9`; use `2:1` only for an explicit email header.
 - Default count: 1-3.
-- Labels: concise by default.
+- Labels: expressive but readable.
 - Best patterns: Opener metaphor, summary loop, obstacle.
 - Goal: add rhythm without making the email feel heavy.
 
@@ -34,7 +34,7 @@ Use presets to choose the right canvas, density, labels, and delivery style.
 - Use for: PPT, Keynote, talks, workshops.
 - Canvas: `16:9`.
 - Default count: 3-8.
-- Labels: concise by default; often no text.
+- Labels: expressive when useful; often no text.
 - Best patterns: chapter opener, concept beside a point, closing action.
 - Goal: support the speaker, not replace the slide.
 
@@ -43,7 +43,7 @@ Use presets to choose the right canvas, density, labels, and delivery style.
 - Use for: docs, onboarding, how-to pages, help centers.
 - Canvas: default `16:9`; use `3:2` or transparent spot illustration when requested.
 - Default count: 2-5.
-- Labels: content-driven, often concise.
+- Labels: content-driven, expressive when useful.
 - Best patterns: Path, Hand-off, Obstacle, Success state.
 - Goal: make a user task or system state feel obvious.
 
@@ -70,7 +70,7 @@ Use presets to choose the right canvas, density, labels, and delivery style.
 - Use for: open-source README, contribution guide, release notes.
 - Canvas: default `16:9`; use `2:1` only when requested.
 - Default count: 2-4.
-- Labels: concise by default.
+- Labels: expressive when useful.
 - Best patterns: install path, issue triage, PR hand-off, release pipeline.
 - Goal: keep an engineering-document tone, not a marketing tone.
 

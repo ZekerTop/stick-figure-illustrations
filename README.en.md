@@ -21,10 +21,10 @@ Default visual language:
 - one restrained accent color, selected automatically when the user does not provide one
 - plenty of whitespace
 - one core idea per image
-- labels are content-driven: concise by default, richer only when useful
+- labels are content-driven and expression-first: concise or richer, as long as they make the image stronger
 - no imitation of any specific creator, brand, IP, illustrator, or public reference style
 
-Users do not need to repeat these baseline requirements. They can provide only the idea, article, scene, or message they want to visualize; the skill applies the default canvas, line art, background, accent color, stick-figure subject, and emotion rules automatically.
+Users do not need to repeat these baseline requirements. They can provide only the idea, article, scene, or message they want to visualize; the skill applies the default canvas, line art, background, accent color, stick-figure subject, and emotion rules automatically. Text is not minimized for its own sake; it should make the image more emotional, comparative, rhythmic, or memorable.
 
 ## What It Is Good For
 
@@ -225,7 +225,7 @@ Output the shot list first. Do not generate images yet.
 Requirements:
 - improve the article's visual feel and reading rhythm; do not add illustrations just to add them
 - each image should show one cognitive turning point
-- labels should be content-driven and concise by default
+- labels should be content-driven and expression-first
 - use fewer than 5 images if there are not enough good placements
 - mark the best 2 images to generate first
 
@@ -261,6 +261,16 @@ Use $stick-figure-illustrations to generate one stick-figure sketch illustration
 
 "Real automation is not about fewer clicks. It is about making one less decision."
 ```
+
+### Generate a more expressive idea illustration
+
+```text
+Use $stick-figure-illustrations to generate an expressive stick-figure sketch illustration for this idea:
+
+"Real automation is not about fewer clicks. It is about making one less decision."
+```
+
+By default, the skill uses `16:9`, white background, black line art, one restrained accent color, and an emotionally readable neutral stick figure. The image may include a short title, state words, contrast words, or a punchline. The goal is not fewer words; the goal is stronger expression.
 
 ### Create a SaaS empty state
 

@@ -35,7 +35,7 @@ Next step:
 - `Stick-figure action`: the exact action the figure performs. Avoid “standing beside”.
 - `Emotion`: the readable emotional state of the figure, such as confused, relieved, hesitant, focused, calm, or excited.
 - `Main objects`: 1-3 simple objects only.
-- `Labels`: content-driven. Prefer concise labels by default; use richer labels only when the scene needs steps, contrast, or explanation.
+- `Labels`: content-driven. Use labels to strengthen emotion, contrast, rhythm, or memorability; concise labels and richer label sets are both acceptable when they serve the idea.
 - `Generate?`: `yes`, `maybe`, or `no`.
 
 ## Priority Rules

@@ -32,13 +32,13 @@ Suggested objects:
 {物件1} / {物件2} / {物件3}
 
 Optional labels:
-{按内容需要决定；可以无文字、少量短标注，或在步骤/对比/教程场景中更丰富}
+{按内容需要决定；优先增强表现力，可以是短标题、状态词、对比词、步骤词、punchline，或在需要时无文字}
 
 Brand/accent color:
 {user-provided brand color, or auto-select one calm accent color}. Use this as the only accent color.
 
 Constraints:
-One image explains one idea. Keep the composition readable at small sizes. Labels should serve the idea: default to concise labels, use no text when possible, and allow richer labels only when the scene genuinely needs steps, contrast, or explanation. The figure's emotion should be clear but restrained, not exaggerated like a meme sticker. Avoid dense diagrams, PPT template aesthetics, complex vector illustration, 3D, photorealism, textured paper, gradients, shadows, UI screenshots, cute stickers, non-human mascots, blob mascots, filled mascot characters, named IP characters, and references to any specific artist, creator, brand, or existing illustration style.
+One image explains one idea. Keep the composition readable at small sizes. Labels should make the image more expressive: use words to strengthen emotion, contrast, rhythm, or memorability. Concise labels are fine, richer labels are also fine when they serve the idea. Avoid paragraph-like explanations, crowded text, dense diagrams, PPT template aesthetics, complex vector illustration, 3D, photorealism, textured paper, gradients, shadows, UI screenshots, cute stickers, non-human mascots, blob mascots, filled mascot characters, named IP characters, and references to any specific artist, creator, brand, or existing illustration style.
 ```
 
 ## 从 shot list 生成单张图

@@ -26,6 +26,14 @@ Use $stick-figure-illustrations 为这个观点生成一张火柴人草图：
 “真正的自动化不是少点几下，而是少做一次判断。”
 ```
 
+## 生成更有表现力的观点图
+
+```text
+Use $stick-figure-illustrations 为这个观点生成一张有表现力的火柴人草图：
+
+“真正的自动化不是少点几下，而是少做一次判断。”
+```
+
 ## 文章配图
 
 ```text
@@ -35,7 +43,7 @@ Use $stick-figure-illustrations 用 article preset 为这篇文章规划 5 张�
 要求：
 - 目标是让文章观感和阅读节奏更好，不是堆砌插图
 - 每张图只画一个认知转折
-- 标注按内容需要决定，默认简洁
+- 标注按内容需要决定，以表现力为准
 - 如果没有足够合适的位置，可以少于 5 张
 - 标出最值得优先生成的 2 张
 - 最后给出“下一步”，列出我可以直接回复的指令，例如：生成 #1 / 生成 #1 和 #2 / 调整 #1 / 先不生成
@@ -59,7 +67,7 @@ Use $stick-figure-illustrations 用 article preset 处理下面文章。
 
 要求：
 - 每张图只表达一个意思
-- 标注按内容需要决定，必要时生成无文字版
+- 标注按内容需要决定，以表现力为准
 - 如果在 workspace 中，保存到 assets/<article-slug>-illustrations/
 
 <粘贴文章>
@@ -94,7 +102,7 @@ Use $stick-figure-illustrations 用 slides preset 为这个演讲大纲设计 6 
 
 要求：
 - 16:9
-- 尽量无文字
+- 文字服务表达，不要抢演讲内容
 - 火柴人动作要一眼看懂
 - 情绪要克制但读得出来
 - 不要 PPT 模板感
@@ -145,7 +153,7 @@ Use $stick-figure-illustrations 用 course preset 把下面教程拆成 5 张火
 - 每张图对应一个学习动作
 - 画幅 16:9
 - 同一套火柴人比例
-- 每张图最多 2 个短标注
+- 标注要帮助学习动作更清楚，可以适当丰富
 - 每张图要有匹配步骤的情绪
 - 输出 shot list 后，再生成第 1 张
 

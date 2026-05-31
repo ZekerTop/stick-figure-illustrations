@@ -26,6 +26,14 @@ Use $stick-figure-illustrations to generate one stick-figure sketch illustration
 "Real automation is not about fewer clicks. It is about making one less decision."
 ```
 
+## Generate a More Expressive Idea Illustration
+
+```text
+Use $stick-figure-illustrations to generate an expressive stick-figure sketch illustration for this idea:
+
+"Real automation is not about fewer clicks. It is about making one less decision."
+```
+
 ## Article Illustrations
 
 ```text
@@ -35,7 +43,7 @@ Output the shot list first. Do not generate images yet.
 Requirements:
 - improve the article's visual feel and reading rhythm; do not add illustrations just to add them
 - each image should show one cognitive turning point
-- labels should be content-driven and concise by default
+- labels should be content-driven and expression-first
 - use fewer than 5 images if there are not enough good placements
 - mark the best 2 images to generate first
 - end with a Next step block listing replies I can copy, such as: Generate #1 / Generate #1 and #2 / Adjust #1 / Do not generate yet
@@ -59,7 +67,7 @@ Please complete this directly:
 
 Requirements:
 - each image should express one idea only
-- labels should be content-driven; generate a no-text version when useful
+- labels should be content-driven and expression-first
 - if working in a workspace, save images to assets/<article-slug>-illustrations/
 
 <Paste article>
@@ -94,7 +102,7 @@ Use cases:
 
 Requirements:
 - 16:9
-- as little text as possible
+- text should support expression without stealing the slide's job
 - the stick-figure action should read at a glance
 - avoid a PPT template look
 
@@ -142,7 +150,7 @@ Requirements:
 - each image should match one learning action
 - 16:9 canvas
 - keep one consistent stick-figure proportion system
-- no more than 2 short labels per image
+- labels can be richer when they make the learning action clearer
 - after the shot list, generate image 1
 
 <Paste tutorial>
