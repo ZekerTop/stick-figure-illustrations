@@ -32,6 +32,7 @@ Choose `P0` when the image:
 
 - explains a key idea faster than text
 - marks a major turn in the argument
+- improves the article's reading rhythm or visual feel at a natural pause
 - helps a reader remember the piece
 - can become a reusable thumbnail or social card
 
@@ -39,6 +40,7 @@ Choose `P1` when the image:
 
 - supports flow or pacing
 - clarifies a step, but the text still works without it
+- gives a long section breathing room without becoming decoration
 - is useful for a slide or carousel, but not essential
 
 Choose `P2` when the image:
@@ -52,6 +54,7 @@ Choose `P2` when the image:
 
 - Do not average one image per section.
 - Prefer fewer, stronger images.
+- If no candidate improves reading rhythm, understanding, or memorability, recommend no image instead of padding the list.
 - Give the figure a clear action and a clear emotion in every candidate image.
 - Do not generate until the best 1-3 candidates are clear, unless the user explicitly asks to generate all.
 - End every shot list with: `Recommended first generation: #...` and one short reason.

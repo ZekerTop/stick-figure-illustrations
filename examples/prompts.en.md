@@ -9,9 +9,11 @@ Use $stick-figure-illustrations to read the content below. Do not generate any i
 
 Please create a stick-figure sketch shot list:
 - Select only the 5 strongest visual thinking anchors
+- Improve visual feel, reading rhythm, or understanding; do not add images just to add them
 - For each image, include: placement, canvas, theme, core idea, stick-figure action, emotion, main objects, short labels, and priority
 - Each image should express one idea only
 - Keep the stick figure as the main subject by default
+- Use fewer than 5 images if there are not enough good placements
 - End by marking the best 2 images to generate first
 
 <Paste content>
@@ -41,11 +43,36 @@ Output the shot list first. Do not generate images yet.
 
 Requirements:
 - 16:9 or 3:2
+- improve the article's visual feel and reading rhythm; do not add illustrations just to add them
 - each image should show one cognitive turning point
 - the stick figure must carry the core action
 - give each stick figure a clear emotion
 - no more than 3 labels per image
+- use fewer than 5 images if there are not enough good placements
 - mark the best 2 images to generate first
+
+<Paste article>
+```
+
+## Article Reading Flow + Direct Generation
+
+```text
+Use $stick-figure-illustrations with the article preset to process the article below.
+
+Please complete this directly:
+1. Decide which placements would improve visual feel, reading rhythm, or understanding
+2. Do not add illustrations just to add them; use fewer images or none if there are no good placements
+3. For each image, provide the exact placement: section name + after which paragraph or sentence
+4. Generate the P0/P1 images and show them directly
+5. Provide Markdown insertion code for each image
+6. Explain in one sentence why the image makes that spot easier to read
+
+Requirements:
+- 16:9 or 3:2
+- each image should express one idea only
+- the stick figure must carry the core action, with clear but restrained emotion
+- no more than 3 labels; generate a no-text version when useful
+- if working in a workspace, save images to assets/<article-slug>-illustrations/
 
 <Paste article>
 ```

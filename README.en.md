@@ -24,7 +24,7 @@ Default visual language:
 
 ## What It Is Good For
 
-This skill is best for turning the parts of a text that truly need to be seen into sketch concepts, rather than forcing one image into every section.
+This skill is best for turning the parts of a text that truly need to be seen into sketch concepts, rather than forcing one image into every section. For articles, the goal is better reading rhythm and visual feel; if an illustration would only add clutter, use fewer images or none.
 
 Common use cases:
 
@@ -97,7 +97,7 @@ Please create a stick-figure sketch shot list:
 
 Why start with a shot list:
 
-- long pieces should not get one image per section by default
+- long pieces should not get one image per section by default; choose moments that improve visual feel, pacing, or understanding
 - one image per idea helps avoid dense infographics and PPT-template energy
 - choosing the `P0` images first saves generation budget
 - you can confirm composition before moving on to generation or edits
@@ -112,6 +112,7 @@ The skill first identifies the parts of the content that are worth visualizing, 
 - simple metaphors for hard concepts
 - before/after contrasts
 - user pain points
+- pauses that improve reading rhythm and visual feel
 - step transitions
 - input/output changes
 - decision forks
@@ -121,7 +122,9 @@ Text that does not benefit from illustration should be skipped.
 
 ### 2. Output a shot list
 
-By default, the skill proposes 3-6 candidate images. Short content may only need 1-2; long articles, courses, or carousels may expand to 8-10, but each image should have a clear purpose.
+By default, the skill proposes 3-6 candidate images. Short content may only need 0-2; long articles, courses, or carousels may expand to 8-10, but each image should have a clear purpose.
+
+If the article already reads smoothly, or there is no strong visual moment, the skill should recommend fewer images or no images instead of padding the count.
 
 Recommended format:
 
@@ -208,10 +211,35 @@ Output the shot list first. Do not generate images yet.
 
 Requirements:
 - 16:9 or 3:2
+- improve the article's visual feel and reading rhythm; do not add illustrations just to add them
 - each image should show one cognitive turning point
 - the stick figure must carry the core action
 - no more than 3 labels per image
+- use fewer than 5 images if there are not enough good placements
 - mark the best 2 images to generate first
+
+<Paste article>
+```
+
+### Improve an article and generate insert-ready images
+
+```text
+Use $stick-figure-illustrations with the article preset to process the article below.
+
+Please complete this directly:
+1. Decide which placements would improve visual feel, reading rhythm, or understanding
+2. Do not add illustrations just to add them; use fewer images or none if there are no good placements
+3. For each image, provide the exact placement: section name + after which paragraph or sentence
+4. Generate the P0/P1 images and show them directly
+5. Provide Markdown insertion code for each image
+6. Explain in one sentence why the image makes that spot easier to read
+
+Requirements:
+- 16:9 or 3:2
+- each image should express one idea only
+- the stick figure must carry the core action, with clear but restrained emotion
+- no more than 3 labels; generate a no-text version when useful
+- if working in a workspace, save images to assets/<article-slug>-illustrations/
 
 <Paste article>
 ```
