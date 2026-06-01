@@ -84,19 +84,15 @@ Then restart Codex.
 
 ## Quick Start
 
-Start by asking the skill to plan a shot list before generating images:
+Start by asking the skill to read the article and plan before generating images:
 
 ```text
-Use $stick-figure-illustrations to read the content below. Do not generate any images yet.
+Use $stick-figure-illustrations to read the article below. Do not generate images yet.
 
-Please create a stick-figure sketch shot list:
-- Select only the 5 strongest visual thinking anchors
-- For each image, include: placement, canvas, theme, core idea, stick-figure action, emotion, main objects, short labels, and priority
-- Each image should express one idea only
-- End by marking the best 2 images to generate first
-
-<Paste content>
+<Paste article>
 ```
+
+Users only need to paste the content. Image count, placements, canvas, fields, priority, and the next-step prompt are handled by the skill defaults.
 
 Why start with a shot list:
 
@@ -153,7 +149,7 @@ Next step:
 
 ### 3. Generate one selected image at a time
 
-The prompt should emphasize:
+When generating a single image, the skill automatically handles:
 
 - a neutral stick figure as the main subject
 - a readable emotion through face and posture
@@ -201,33 +197,19 @@ Presets make the output more stable:
 Example:
 
 ```text
-Use $stick-figure-illustrations with the carousel preset to design a 7-page social carousel for this topic.
-Output the shot list first. Do not generate images yet.
+Use $stick-figure-illustrations with the carousel preset to design a social carousel for this topic. Do not generate images yet.
 
 Topic: How one person turns AI into a daily workflow
-
-Requirements:
-- 4:5 canvas
-- one stick-figure action per page
-- one short title per page
-- page 1 needs a strong hook
-- page 7 should close with an action
 ```
+
+![Social carousel plan: turning AI into a daily workflow](assets/readme-examples/04-carousel-ai-workflow.png)
 
 ## Copy-Paste Examples
 
 ### Plan illustrations for an article
 
 ```text
-Use $stick-figure-illustrations with the article preset to plan 5 stick-figure sketch illustrations for this article.
-Output the shot list first. Do not generate images yet.
-
-Requirements:
-- improve the article's visual feel and reading rhythm; do not add illustrations just to add them
-- each image should show one cognitive turning point
-- labels should be content-driven and expression-first
-- use fewer than 5 images if there are not enough good placements
-- mark the best 2 images to generate first
+Use $stick-figure-illustrations to read the article below. Do not generate images yet.
 
 <Paste article>
 ```
@@ -235,74 +217,44 @@ Requirements:
 ### Improve an article and generate insert-ready images
 
 ```text
-Use $stick-figure-illustrations with the article preset to process the article below.
-
-Please complete this directly:
-1. Decide which placements would improve visual feel, reading rhythm, or understanding
-2. Do not add illustrations just to add them; use fewer images or none if there are no good placements
-3. For each image, provide the exact placement: section name + after which paragraph or sentence
-4. Generate the P0/P1 images and show them directly
-5. Provide Markdown insertion code for each image
-6. Explain in one sentence why the image makes that spot easier to read
-7. If images are not generated directly, end with a `Next step` prompt, such as: Generate #1 / Adjust #1 / Do not generate yet
-
-Requirements:
-- each image should express one idea only
-- labels should be content-driven; generate a no-text version when useful
-- if working in a workspace, save images to assets/<article-slug>-illustrations/
+Use $stick-figure-illustrations to find good illustration placements for the article below and directly generate images that improve the reading experience.
 
 <Paste article>
 ```
 
-### Generate one idea illustration
+### Generate an idea illustration
 
 ```text
-Use $stick-figure-illustrations to generate one stick-figure sketch illustration for this idea:
+Use $stick-figure-illustrations to generate one image for this idea:
 
-"Real automation is not about fewer clicks. It is about making one less decision."
+"A good tool gathers the mess and puts the next step in front of you."
 ```
 
-### Generate a more expressive idea illustration
-
-```text
-Use $stick-figure-illustrations to generate an expressive stick-figure sketch illustration for this idea:
-
-"Real automation is not about fewer clicks. It is about making one less decision."
-```
-
-By default, the skill uses `16:9`, white background, black line art, one restrained accent color, and an emotionally readable neutral stick figure. The image may include a short title, state words, contrast words, or a punchline. The goal is not fewer words; the goal is stronger expression.
+By default, this is treated as an expressive idea illustration: `16:9`, white background, black line art, one restrained accent color, and an emotionally readable neutral stick figure. Users do not need to add "expressive" to the prompt. The image may include a short title, state words, contrast words, or a punchline. The goal is not fewer words; the goal is stronger expression.
 
 ### Create a SaaS empty state
 
 ```text
-Use $stick-figure-illustrations with the saas-state preset to generate one stick-figure sketch illustration:
+Use $stick-figure-illustrations with the saas-state preset to generate an empty-state illustration:
 
 State: The user has not created any project yet.
-
-Requirements:
-- white or transparent background
-- a neutral stick figure stands next to an empty folder and holds the first card
-- one brand-green accent color: #22c55e
-- no text
-- suitable for the center area of a product UI
 ```
+
+![SaaS empty state: the user has not created any project yet](assets/readme-examples/02-saas-empty-state.png)
 
 ### Plan README illustrations for an open-source project
 
 ```text
-Use $stick-figure-illustrations with the readme preset to design a 4-image stick-figure sketch shot list for this open-source README.
+Use $stick-figure-illustrations with the readme preset to plan illustrations for this open-source README.
 
 Scenes:
 1. Install
 2. Configure
 3. Submit an issue
 4. Open a PR
-
-Requirements:
-- engineering-document tone
-- avoid a marketing-poster feel
-- each image needs a clear stick-figure action
 ```
+
+![Open-source README illustration plan: install, configure, submit an issue, open a PR](assets/readme-examples/03-readme-illustration-plan.png)
 
 More English examples: [examples/prompts.en.md](./examples/prompts.en.md). Chinese examples: [examples/prompts.md](./examples/prompts.md)
 

@@ -1,52 +1,29 @@
 # Prompt 示例
 
-把这些提示词复制到 Codex 里，再替换占位内容。
+把这些提示词复制到 Codex 里，再替换占位内容。示例只保留用户需要提供的内容和目标；画幅、视觉风格、火柴人情绪、标注密度和质量检查由 skill 默认处理。
 
 ## 最佳起手式
 
 ```text
 Use $stick-figure-illustrations 阅读下面内容，先不要生图。
 
-请输出一份火柴人草图 shot list：
-- 只挑真正值得视觉化的 5 个认知锚点
-- 目标是改善观感、阅读节奏或理解，不要为了配图而配图
-- 每张图说明：放置位置、画幅、主题、核心意思、火柴人动作、情绪、主要元素、短标注、优先级
-- 每张图只表达一个意思
-- 如果没有足够合适的位置，可以少于 5 张
-- 最后标出最值得优先生成的 2 张
-
 <粘贴内容>
 ```
 
-## 生成单张观点图
+## 生成观点图
 
 ```text
-Use $stick-figure-illustrations 为这个观点生成一张火柴人草图：
+Use $stick-figure-illustrations 为这个观点生成一张图：
 
-“真正的自动化不是少点几下，而是少做一次判断。”
+“好的工具会把混乱收起来，把下一步摆到你面前。”
 ```
 
-## 生成更有表现力的观点图
-
-```text
-Use $stick-figure-illustrations 为这个观点生成一张有表现力的火柴人草图：
-
-“真正的自动化不是少点几下，而是少做一次判断。”
-```
+默认就是有表现力的观点图，不需要在提示词里额外写“有表现力”。
 
 ## 文章配图
 
 ```text
-Use $stick-figure-illustrations 用 article preset 为这篇文章规划 5 张火柴人草图。
-先输出 shot list，不要生图。
-
-要求：
-- 目标是让文章观感和阅读节奏更好，不是堆砌插图
-- 每张图只画一个认知转折
-- 标注按内容需要决定，以表现力为准
-- 如果没有足够合适的位置，可以少于 5 张
-- 标出最值得优先生成的 2 张
-- 最后给出“下一步”，列出我可以直接回复的指令，例如：生成 #1 / 生成 #1 和 #2 / 调整 #1 / 先不生成
+Use $stick-figure-illustrations 阅读下面文章，先不要生图。
 
 <粘贴文章>
 ```
@@ -54,21 +31,7 @@ Use $stick-figure-illustrations 用 article preset 为这篇文章规划 5 张�
 ## 文章观感优化 + 直接生成插图
 
 ```text
-Use $stick-figure-illustrations 用 article preset 处理下面文章。
-
-请直接完成：
-1. 以提升文章观感、阅读节奏和理解为目标，判断哪些位置适合插入插图
-2. 不要为了配图而配图；如果没有合适位置，可以少配或不配
-3. 输出每张图的具体插入位置：章节名 + 插在某段/某句之后
-4. 生成建议优先级为 P0/P1 的图片，并直接展示
-5. 每张图给出 Markdown 插入代码
-6. 说明这张图为什么能让这里更好读
-7. 如果没有直接生成，也请在结尾给出“下一步”，告诉我可以回复：生成 #1 / 调整 #1 / 先不生成
-
-要求：
-- 每张图只表达一个意思
-- 标注按内容需要决定，以表现力为准
-- 如果在 workspace 中，保存到 assets/<article-slug>-illustrations/
+Use $stick-figure-illustrations 为下面文章找适合插图的位置，并直接生成能改善阅读观感的图片。
 
 <粘贴文章>
 ```
@@ -76,36 +39,20 @@ Use $stick-figure-illustrations 用 article preset 处理下面文章。
 ## 社媒轮播
 
 ```text
-Use $stick-figure-illustrations 用 carousel preset 把这个主题设计成 7 页社媒轮播。
-先输出 shot list，不要生图。
+Use $stick-figure-illustrations 用 carousel preset 把这个主题设计成社媒轮播，先不要生图。
 
 主题：一个人如何把 AI 变成日常工作流
-
-要求：
-- 画幅 4:5
-- 每页一个火柴人动作
-- 每页要有清楚情绪
-- 每页一个短标题
-- 第 1 页要有强钩子
-- 第 7 页是行动收束
 ```
 
 ## PPT / Keynote
 
 ```text
-Use $stick-figure-illustrations 用 slides preset 为这个演讲大纲设计 6 张火柴人草图插图。
+Use $stick-figure-illustrations 用 slides preset 为这个演讲大纲规划插图。
 
 用途：
 - 章节过渡页
 - 关键观点旁图
 - 结尾行动页
-
-要求：
-- 16:9
-- 文字服务表达，不要抢演讲内容
-- 火柴人动作要一眼看懂
-- 情绪要克制但读得出来
-- 不要 PPT 模板感
 
 <粘贴大纲>
 ```
@@ -113,49 +60,27 @@ Use $stick-figure-illustrations 用 slides preset 为这个演讲大纲设计 6 
 ## SaaS 空状态
 
 ```text
-Use $stick-figure-illustrations 用 saas-state preset 生成一张火柴人草图：
+Use $stick-figure-illustrations 用 saas-state preset 生成空状态插图：
 
 状态：用户还没有创建任何项目。
-
-要求：
-- 白底或透明背景
-- 中性火柴人站在一个空文件夹旁，手里拿着第一张卡片
-- 表情要读得出一点期待和起步感
-- 一个品牌绿色点缀色：#22c55e
-- 无文字
-- 适合产品界面中间区域
 ```
 
 ## 开源 README
 
 ```text
-Use $stick-figure-illustrations 用 readme preset 为这个开源项目 README 设计 4 张火柴人草图 shot list。
+Use $stick-figure-illustrations 用 readme preset 为这个开源项目 README 规划插图。
 
 场景：
 1. 安装
 2. 配置
 3. 提交 issue
 4. 发起 PR
-
-要求：
-- 工程文档气质
-- 不要营销海报感
-- 每张图都有明确火柴人动作
-- 每张图的情绪要服务场景，不要无表情
 ```
 
 ## 教程 / 课程
 
 ```text
-Use $stick-figure-illustrations 用 course preset 把下面教程拆成 5 张火柴人步骤图。
-
-要求：
-- 每张图对应一个学习动作
-- 画幅 16:9
-- 同一套火柴人比例
-- 标注要帮助学习动作更清楚，可以适当丰富
-- 每张图要有匹配步骤的情绪
-- 输出 shot list 后，再生成第 1 张
+Use $stick-figure-illustrations 用 course preset 处理下面教程，先输出规划，然后生成第 1 张。
 
 <粘贴教程>
 ```
@@ -163,32 +88,17 @@ Use $stick-figure-illustrations 用 course preset 把下面教程拆成 5 张火
 ## 复杂概念
 
 ```text
-Use $stick-figure-illustrations 为这个概念生成一张火柴人草图：
+Use $stick-figure-illustrations 为这个概念生成一张图：
 
 “信任不是说服出来的，而是证据一块一块铺出来的。”
-
-要求：
-- 火柴人把一块块证据卡片铺成桥
-- 桥的一端是“陌生”，另一端是“信任”
-- 火柴人从犹豫逐渐变得安心
-- 一个橙色点缀色
-- 不要画成流程图
 ```
 
 ## 功能发布
 
 ```text
-Use $stick-figure-illustrations 为这个功能发布设计 3 张火柴人草图方案。
-先输出方案，不要生图。
+Use $stick-figure-illustrations 为这个功能发布规划 3 张方案，先不要生图。
 
 功能：自动把会议录音整理成任务清单。
-
-要求：
-- 方案 A：用户痛点
-- 方案 B：功能工作方式
-- 方案 C：使用后状态
-- 每个方案都说明火柴人在做什么
-- 每个方案都说明火柴人的情绪
 ```
 
 ## 改图 / 重画
@@ -199,8 +109,5 @@ Use $stick-figure-illustrations 这张图方向对，但太像流程图。
 
 - 保留核心意思
 - 改成自然场景
-- 火柴人承担主要动作
-- 给火柴人补上清楚但克制的情绪
 - 删除大标题和多余节点
-- 白底黑线，一个绿色点缀色
 ```

@@ -1,4 +1,6 @@
 .DS_Store
-assets/
+assets/*
+!assets/readme-examples/
+!assets/readme-examples/**
 *.tmp
 *.bak

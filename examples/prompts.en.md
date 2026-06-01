@@ -1,19 +1,11 @@
 # Prompt Examples
 
-Copy these prompts into Codex and replace the placeholders.
+Copy these prompts into Codex and replace the placeholders. Examples keep only the content and goal the user needs to provide; canvas, visual style, stick-figure emotion, label density, and quality checks are handled by the skill defaults.
 
 ## Best Starting Prompt
 
 ```text
 Use $stick-figure-illustrations to read the content below. Do not generate any images yet.
-
-Please create a stick-figure sketch shot list:
-- Select only the 5 strongest visual thinking anchors
-- Improve visual feel, reading rhythm, or understanding; do not add images just to add them
-- For each image, include: placement, canvas, theme, core idea, stick-figure action, emotion, main objects, short labels, and priority
-- Each image should express one idea only
-- Use fewer than 5 images if there are not enough good placements
-- End by marking the best 2 images to generate first
 
 <Paste content>
 ```
@@ -21,32 +13,17 @@ Please create a stick-figure sketch shot list:
 ## Generate From One Idea
 
 ```text
-Use $stick-figure-illustrations to generate one stick-figure sketch illustration for this idea:
+Use $stick-figure-illustrations to generate one image for this idea:
 
-"Real automation is not about fewer clicks. It is about making one less decision."
+"A good tool gathers the mess and puts the next step in front of you."
 ```
 
-## Generate a More Expressive Idea Illustration
-
-```text
-Use $stick-figure-illustrations to generate an expressive stick-figure sketch illustration for this idea:
-
-"Real automation is not about fewer clicks. It is about making one less decision."
-```
+By default, this already means an expressive idea illustration. Users do not need to add "expressive" to the prompt.
 
 ## Article Illustrations
 
 ```text
-Use $stick-figure-illustrations with the article preset to plan 5 stick-figure sketch illustrations for this article.
-Output the shot list first. Do not generate images yet.
-
-Requirements:
-- improve the article's visual feel and reading rhythm; do not add illustrations just to add them
-- each image should show one cognitive turning point
-- labels should be content-driven and expression-first
-- use fewer than 5 images if there are not enough good placements
-- mark the best 2 images to generate first
-- end with a Next step block listing replies I can copy, such as: Generate #1 / Generate #1 and #2 / Adjust #1 / Do not generate yet
+Use $stick-figure-illustrations to read the article below. Do not generate images yet.
 
 <Paste article>
 ```
@@ -54,21 +31,7 @@ Requirements:
 ## Article Reading Flow + Direct Generation
 
 ```text
-Use $stick-figure-illustrations with the article preset to process the article below.
-
-Please complete this directly:
-1. Decide which placements would improve visual feel, reading rhythm, or understanding
-2. Do not add illustrations just to add them; use fewer images or none if there are no good placements
-3. For each image, provide the exact placement: section name + after which paragraph or sentence
-4. Generate the P0/P1 images and show them directly
-5. Provide Markdown insertion code for each image
-6. Explain in one sentence why the image makes that spot easier to read
-7. If images are not generated directly, end with a Next step block telling me I can reply: Generate #1 / Adjust #1 / Do not generate yet
-
-Requirements:
-- each image should express one idea only
-- labels should be content-driven and expression-first
-- if working in a workspace, save images to assets/<article-slug>-illustrations/
+Use $stick-figure-illustrations to find good illustration placements for the article below and directly generate images that improve the reading experience.
 
 <Paste article>
 ```
@@ -76,35 +39,20 @@ Requirements:
 ## Social Carousel
 
 ```text
-Use $stick-figure-illustrations with the carousel preset to design a 7-page social carousel for this topic.
-Output the shot list first. Do not generate images yet.
+Use $stick-figure-illustrations with the carousel preset to design a social carousel for this topic. Do not generate images yet.
 
 Topic: How one person turns AI into a daily workflow
-
-Requirements:
-- 4:5 canvas
-- one stick-figure action per page
-- a clear emotion on each page
-- one short title per page
-- page 1 needs a strong hook
-- page 7 should close with an action
 ```
 
 ## PPT / Keynote
 
 ```text
-Use $stick-figure-illustrations with the slides preset to design 6 stick-figure sketch illustrations for this talk outline.
+Use $stick-figure-illustrations with the slides preset to plan illustrations for this talk outline.
 
 Use cases:
 - section transition slides
 - supporting visuals beside key ideas
 - a closing action slide
-
-Requirements:
-- 16:9
-- text should support expression without stealing the slide's job
-- the stick-figure action should read at a glance
-- avoid a PPT template look
 
 <Paste outline>
 ```
@@ -112,46 +60,27 @@ Requirements:
 ## SaaS Empty State
 
 ```text
-Use $stick-figure-illustrations with the saas-state preset to generate one stick-figure sketch illustration:
+Use $stick-figure-illustrations with the saas-state preset to generate an empty-state illustration:
 
 State: The user has not created any project yet.
-
-Requirements:
-- white or transparent background
-- a neutral stick figure stands next to an empty folder and holds the first card
-- one brand-green accent color: #22c55e
-- no text
-- suitable for the center area of a product UI
 ```
 
 ## Open-Source README
 
 ```text
-Use $stick-figure-illustrations with the readme preset to design a 4-image stick-figure sketch shot list for this open-source README.
+Use $stick-figure-illustrations with the readme preset to plan illustrations for this open-source README.
 
 Scenes:
 1. Install
 2. Configure
 3. Submit an issue
 4. Open a PR
-
-Requirements:
-- engineering-document tone
-- avoid a marketing-poster feel
-- each image needs a clear stick-figure action
 ```
 
 ## Tutorial / Course
 
 ```text
-Use $stick-figure-illustrations with the course preset to break the tutorial below into 5 stick-figure step illustrations.
-
-Requirements:
-- each image should match one learning action
-- 16:9 canvas
-- keep one consistent stick-figure proportion system
-- labels can be richer when they make the learning action clearer
-- after the shot list, generate image 1
+Use $stick-figure-illustrations with the course preset to process the tutorial below. Plan first, then generate image 1.
 
 <Paste tutorial>
 ```
@@ -159,30 +88,17 @@ Requirements:
 ## Complex Concept
 
 ```text
-Use $stick-figure-illustrations to generate one stick-figure sketch illustration for this concept:
+Use $stick-figure-illustrations to generate one image for this concept:
 
 "Trust is not argued into existence. It is built by laying down evidence piece by piece."
-
-Requirements:
-- a stick figure lays evidence cards one by one to form a bridge
-- one side of the bridge is "unknown" and the other side is "trust"
-- one orange accent color
-- do not render it like a flowchart
 ```
 
 ## Product Launch
 
 ```text
-Use $stick-figure-illustrations to design 3 stick-figure sketch concepts for this feature launch.
-Output the concepts first. Do not generate images yet.
+Use $stick-figure-illustrations to plan 3 concepts for this feature launch. Do not generate images yet.
 
 Feature: Automatically turn meeting recordings into task lists.
-
-Requirements:
-- Concept A: user pain point
-- Concept B: how the feature works
-- Concept C: the after state
-- each concept should explain what the stick figure is doing
 ```
 
 ## Edit / Redraw
@@ -193,7 +109,5 @@ Please regenerate it with these changes:
 
 - keep the core idea
 - turn it into a natural scene
-- let the stick figure carry the main action
 - remove the big title and extra nodes
-- white background, black line art, one green accent color
 ```

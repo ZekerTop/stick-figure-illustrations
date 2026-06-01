@@ -84,19 +84,15 @@ cp -R ./stick-figure-illustrations "${CODEX_HOME:-$HOME/.codex}/skills/"
 
 ## 最快开始
 
-先让 skill 规划 shot list，不要急着生图：
+先让 skill 读文章并规划，不要急着生图：
 
 ```text
-Use $stick-figure-illustrations 阅读下面内容，先不要生图。
+Use $stick-figure-illustrations 阅读下面文章，先不要生图。
 
-请输出一份火柴人草图 shot list：
-- 只挑真正值得视觉化的 5 个认知锚点
-- 每张图说明：放置位置、画幅、主题、核心意思、火柴人动作、情绪、主要元素、短标注、优先级
-- 每张图只表达一个意思
-- 最后标出最值得优先生成的 2 张
-
-<粘贴内容>
+<粘贴文章>
 ```
+
+用户只需要贴内容；插图数量、插入位置、画幅、字段、优先级和下一步提示都由 skill 默认处理。
 
 为什么推荐先做 shot list：
 
@@ -153,7 +149,7 @@ skill 会先从内容中挑出适合视觉化的部分，例如：
 
 ### 3. 选中一张再生成
 
-生成单张图时，提示词会强调：
+生成单张图时，skill 会自动在生图提示词里处理：
 
 - 中性火柴人作为主体
 - 火柴人的情绪能被一眼读懂
@@ -201,34 +197,19 @@ skill 会先从内容中挑出适合视觉化的部分，例如：
 示例：
 
 ```text
-Use $stick-figure-illustrations 用 carousel preset 把这个主题设计成 7 页社媒轮播。
-先输出 shot list，不要生图。
+Use $stick-figure-illustrations 用 carousel preset 把这个主题设计成社媒轮播，先不要生图。
 
 主题：一个人如何把 AI 变成日常工作流
-
-要求：
-- 画幅 4:5
-- 每页一个火柴人动作
-- 每页要有清楚情绪
-- 每页一个短标题
-- 第 1 页要有强钩子
-- 第 7 页是行动收束
 ```
+
+![社媒轮播规划：把 AI 变成日常工作流](assets/readme-examples/04-carousel-ai-workflow.png)
 
 ## 可复制例子
 
 ### 为文章规划配图
 
 ```text
-Use $stick-figure-illustrations 用 article preset 为这篇文章规划 5 张火柴人草图。
-先输出 shot list，不要生图。
-
-要求：
-- 目标是让文章观感和阅读节奏更好，不是堆砌插图
-- 每张图只画一个认知转折
-- 标注按内容需要决定，默认简洁
-- 如果没有足够合适的位置，可以少于 5 张
-- 标出最值得优先生成的 2 张
+Use $stick-figure-illustrations 阅读下面文章，先不要生图。
 
 <粘贴文章>
 ```
@@ -236,76 +217,46 @@ Use $stick-figure-illustrations 用 article preset 为这篇文章规划 5 张�
 ### 为文章优化观感并直接生成插图
 
 ```text
-Use $stick-figure-illustrations 用 article preset 处理下面文章。
-
-请直接完成：
-1. 以提升文章观感、阅读节奏和理解为目标，判断哪些位置适合插入插图
-2. 不要为了配图而配图；如果没有合适位置，可以少配或不配
-3. 输出每张图的具体插入位置：章节名 + 插在某段/某句之后
-4. 生成建议优先级为 P0/P1 的图片，并直接展示
-5. 每张图给出 Markdown 插入代码
-6. 说明这张图为什么能让这里更好读
-7. 如果没有直接生成，也请在结尾给出“下一步”提示，例如：生成 #1 / 调整 #1 / 先不生成
-
-要求：
-- 每张图只表达一个意思
-- 标注按内容需要决定，必要时生成无文字版
-- 如果在 workspace 中，保存到 assets/<article-slug>-illustrations/
+Use $stick-figure-illustrations 为下面文章找适合插图的位置，并直接生成能改善阅读观感的图片。
 
 <粘贴文章>
 ```
 
-### 生成单张观点图
+### 生成观点图
 
 ```text
-Use $stick-figure-illustrations 为这个观点生成一张火柴人草图：
+Use $stick-figure-illustrations 为这个观点生成一张图：
 
-“真正的自动化不是少点几下，而是少做一次判断。”
+“好的工具会把混乱收起来，把下一步摆到你面前。”
 ```
 
-### 生成更有表现力的观点图
+![好的工具会把混乱收起来，把下一步摆到你面前](assets/readme-examples/01-good-tool-next-step.png)
 
-```text
-Use $stick-figure-illustrations 为这个观点生成一张有表现力的火柴人草图：
-
-“真正的自动化不是少点几下，而是少做一次判断。”
-```
-
-默认会使用 `16:9`、白底黑线、一个克制点缀色和有情绪的中性火柴人。图片可以包含短标题、状态词、对比词或一句 punchline；重点不是少字，而是让文字增强表达力。
+默认就按有表现力的观点图处理：使用 `16:9`、白底黑线、一个克制点缀色和有情绪的中性火柴人。用户不需要额外写“有表现力”。图片可以包含短标题、状态词、对比词或一句 punchline；重点不是少字，而是让文字增强表达力。
 
 ### 做 SaaS 空状态
 
 ```text
-Use $stick-figure-illustrations 用 saas-state preset 生成一张火柴人草图：
+Use $stick-figure-illustrations 用 saas-state preset 生成空状态插图：
 
 状态：用户还没有创建任何项目。
-
-要求：
-- 白底或透明背景
-- 中性火柴人站在一个空文件夹旁，手里拿着第一张卡片
-- 表情要读得出一点期待和起步感
-- 一个品牌绿色点缀色：#22c55e
-- 无文字
-- 适合产品界面中间区域
 ```
+
+![SaaS 空状态：用户还没有创建任何项目](assets/readme-examples/02-saas-empty-state.png)
 
 ### 给开源项目 README 规划插图
 
 ```text
-Use $stick-figure-illustrations 用 readme preset 为这个开源项目 README 设计 4 张火柴人草图 shot list。
+Use $stick-figure-illustrations 用 readme preset 为这个开源项目 README 规划插图。
 
 场景：
 1. 安装
 2. 配置
 3. 提交 issue
 4. 发起 PR
-
-要求：
-- 工程文档气质
-- 不要营销海报感
-- 每张图都有明确火柴人动作
-- 每张图的情绪要服务场景，不要无表情
 ```
+
+![开源项目 README 插图规划：安装、配置、提交 issue、发起 PR](assets/readme-examples/03-readme-illustration-plan.png)
 
 更多中文示例见 [examples/prompts.md](examples/prompts.md)，英文示例见 [examples/prompts.en.md](examples/prompts.en.md)。
 
