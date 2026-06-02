@@ -12,6 +12,8 @@ Usage: Use $stick-figure-illustrations ...
 
 This skill is not about generating a fixed mascot, a character IP, or an imitation of one creator's signature style. It is about turning abstract ideas into easy-to-understand **action scenes**: a stick figure choosing, sorting, handing off, fixing, building, observing, or moving through an obstacle while showing readable emotion through minimal expression and posture.
 
+If you want a calmer, cuter capybara character system with a relaxed emotionally steady vibe, use the companion repository: [capybara-illustrations](https://github.com/ZekerTop/capybara-illustrations).
+
 Default visual language:
 
 - anonymous stick figures with circular heads, line bodies, simple limbs, and readable emotion
@@ -334,6 +336,11 @@ When adding a new preset, update at least:
 - `examples/prompts.md`
 - `README.md`
 - `README.en.md`
+
+## Related Repositories
+
+- [capybara-illustrations](https://github.com/ZekerTop/capybara-illustrations): capybara character illustrations for relaxed, emotionally steady, more playful idea visuals.
+- `stick-figure-illustrations`: anonymous neutral stick figures for explainers, flow visuals, and lightweight illustration planning.
 
 ## License
 
