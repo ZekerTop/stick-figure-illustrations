@@ -12,7 +12,10 @@ Usage: Use $stick-figure-illustrations ...
 
 This skill is not about generating a fixed mascot, a character IP, or an imitation of one creator's signature style. It is about turning abstract ideas into easy-to-understand **action scenes**: a stick figure choosing, sorting, handing off, fixing, building, observing, or moving through an obstacle while showing readable emotion through minimal expression and posture.
 
-If you want a calmer, cuter capybara character system with a relaxed emotionally steady vibe, use the companion repository: [capybara-illustrations](https://github.com/ZekerTop/capybara-illustrations).
+## Choosing Between The Two Skills
+
+- Use `stick-figure-illustrations` when you want neutral, lightweight explanatory visuals for flows, steps, comparisons, tutorials, or open-source docs.
+- Use [capybara-illustrations](https://github.com/ZekerTop/capybara-illustrations) when you want a calmer, more characterful, slightly cuter visual for idea images, product states, social posts, or content that needs a relaxed emotional tone.
 
 Default visual language:
 
@@ -337,10 +340,12 @@ When adding a new preset, update at least:
 - `README.md`
 - `README.en.md`
 
-## Related Repositories
+## Related Tool
 
-- [capybara-illustrations](https://github.com/ZekerTop/capybara-illustrations): capybara character illustrations for relaxed, emotionally steady, more playful idea visuals.
-- `stick-figure-illustrations`: anonymous neutral stick figures for explainers, flow visuals, and lightweight illustration planning.
+If you like this lightweight illustration workflow, choose by the tone your content needs:
+
+- `stick-figure-illustrations`: more neutral, best for explainers, flow visuals, tutorials, and open-source docs.
+- [capybara-illustrations](https://github.com/ZekerTop/capybara-illustrations): more characterful, best for idea visuals, social posts, SaaS states, and content that benefits from a relaxed emotional tone.
 
 ## License
 

@@ -12,7 +12,10 @@ Usage: Use $stick-figure-illustrations ...
 
 这个 skill 的重点不是生成一个固定角色、吉祥物或个人作者 IP，而是把抽象内容变成更容易理解和传播的**动作场景**：一个火柴人在选择、整理、递交、修复、搭建、观察或穿过障碍，并通过极简表情和姿态传达情绪。
 
-如果你想要的是有松弛感、情绪稳定感、更可爱的卡皮巴拉（水豚）角色插图，可以使用另一个仓库：[capybara-illustrations](https://github.com/ZekerTop/capybara-illustrations)。
+## 和卡皮巴拉 skill 怎么选
+
+- 想要**中性、轻量、偏解释型**的配图，比如流程、步骤、对比、开源文档说明，用 `stick-figure-illustrations`。
+- 想要**更有角色感、更松弛、更可爱一点**的观点图、状态图或社媒图，用 [capybara-illustrations](https://github.com/ZekerTop/capybara-illustrations)。
 
 默认视觉语言：
 
@@ -338,10 +341,12 @@ stick-figure-illustrations/
 - `examples/prompts.md`
 - `README.md`
 
-## 相关仓库
+## 相关工具
 
-- [capybara-illustrations](https://github.com/ZekerTop/capybara-illustrations)：卡皮巴拉（水豚）角色插图，适合松弛感、情绪稳定感和更有趣的观点表达。
-- `stick-figure-illustrations`：匿名中性火柴人，适合解释图、流程图和轻量配图规划。
+如果你喜欢这类轻量插图工作流，也可以按内容气质选择：
+
+- `stick-figure-illustrations`：更中性，适合解释图、流程图、教程和开源文档。
+- [capybara-illustrations](https://github.com/ZekerTop/capybara-illustrations)：更有角色感，适合观点图、社媒图、SaaS 状态和需要一点松弛感的内容。
 
 ## License
 
