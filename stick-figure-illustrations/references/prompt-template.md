@@ -22,8 +22,8 @@ Theme:
 Core idea:
 {这张图要表达的核心意思}
 
-Scene pattern:
-{Before/After / Path / Hand-off / Stack / Split-Merge / Trade-off / Obstacle / Loop / Custom}
+Composition pattern:
+{Before/After / Path / Hand-off / Stack / Split-Merge / Trade-off / Obstacle / Loop / Container / Workbench / Checklist / Map / Signal-Noise / Zoom-in / Custom}
 
 Composition:
 {具体画面：火柴人在哪里、正在做什么、是什么情绪、主要物件是什么、信息如何移动或变化}
@@ -31,14 +31,17 @@ Composition:
 Suggested objects:
 {物件1} / {物件2} / {物件3}
 
-Optional labels:
-{按内容需要决定；优先增强表现力，可以是短标题、状态词、对比词、步骤词、punchline，或在需要时无文字}
+Required expressive labels:
+Unless the user explicitly asks for no text, include readable short labels that make the image understandable and more fun: 1 short title or punchline, plus 2-5 object/state/action labels. Label the important objects, path, current step, blocker, result, or contrast words. Use the user's language. Keep labels short; do not write paragraphs.
+
+Label plan:
+{短标题或 punchline} / {关键物件标签} / {状态词} / {动作词} / {结果词}
 
 Brand/accent color:
 {user-provided brand color, or auto-select one calm accent color}. Use this as the only accent color.
 
 Constraints:
-One image explains one idea. Keep the composition readable at small sizes. Labels should make the image more expressive: use words to strengthen emotion, contrast, rhythm, or memorability. Concise labels are fine, richer labels are also fine when they serve the idea. Avoid paragraph-like explanations, crowded text, dense diagrams, PPT template aesthetics, complex vector illustration, 3D, photorealism, textured paper, gradients, shadows, UI screenshots, cute stickers, non-human mascots, blob mascots, filled mascot characters, named IP characters, and references to any specific artist, creator, brand, or existing illustration style.
+One image explains one idea. Keep the composition readable at small sizes. Labels should make the image more expressive and self-explanatory: use words to strengthen emotion, contrast, rhythm, or memorability, and label key objects so viewers are not forced to guess. Concise labels are fine, richer label sets are also fine when they serve the idea. Avoid paragraph-like explanations, crowded text, dense diagrams, PPT template aesthetics, complex vector illustration, 3D, photorealism, textured paper, gradients, shadows, UI screenshots, cute stickers, non-human mascots, blob mascots, filled mascot characters, named IP characters, and references to any specific artist, creator, brand, or existing illustration style.
 ```
 
 ## 从 shot list 生成单张图
@@ -48,7 +51,7 @@ Create one standalone stick-figure sketch illustration from this selected shot:
 
 {粘贴 shot list 中的一条}
 
-Follow the selected canvas, channel, core idea, stick-figure action, stick-figure emotion, main objects, labels, and accent color. Neutral stick figures must remain the main subject. Keep the image sparse, readable, emotionally clear, and not like a PPT diagram.
+Follow the selected canvas, channel, core idea, composition pattern, stick-figure action, stick-figure emotion, main objects, labels, and accent color. Neutral stick figures must remain the main subject. Include the selected labels as visible short text unless the shot explicitly says no text. Keep the image readable, emotionally clear, lightly witty when appropriate, and not like a PPT diagram.
 ```
 
 ## 无文字版本

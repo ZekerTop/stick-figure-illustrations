@@ -21,10 +21,10 @@ Default visual language:
 - one restrained accent color, selected automatically when the user does not provide one
 - plenty of whitespace
 - one core idea per image
-- labels are content-driven and expression-first: concise or richer, as long as they make the image stronger
+- expressive short labels by default: short title, object labels, state words, action words, or a punchline
 - no imitation of any specific creator, brand, IP, illustrator, or public reference style
 
-Users do not need to repeat these baseline requirements. They can provide only the idea, article, scene, or message they want to visualize; the skill applies the default canvas, line art, background, accent color, stick-figure subject, and emotion rules automatically. Text is not minimized for its own sake; it should make the image more emotional, comparative, rhythmic, or memorable.
+Users do not need to repeat these baseline requirements. They can provide only the idea, article, scene, or message they want to visualize; the skill applies the default canvas, line art, background, accent color, stick-figure subject, emotion, and expressive-label rules automatically. Text is not minimized for its own sake; unless the user asks for a no-text version, key objects, states, and next steps should be labeled so viewers do not have to guess.
 
 ## What It Is Good For
 
@@ -127,9 +127,9 @@ If the article already reads smoothly, or there is no strong visual moment, the 
 
 Recommended format:
 
-| # | Priority | Placement | Canvas | Theme | Core idea | Scene pattern | Stick-figure action | Emotion | Main objects | Labels | Generate? |
+| # | Priority | Placement | Canvas | Theme | Core idea | Composition pattern | Stick-figure action | Emotion | Main objects | Labels | Generate? |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | P0 | opener | 16:9 | From clutter to path | Turn scattered tasks into an actionable route | Before/After | A stick figure arranges scattered cards into a path | confused, then focused | cards / path / flag | input / path / output | yes |
+| 1 | P0 | opener | 16:9 | From clutter to path | Turn scattered tasks into an actionable route | Container | A stick figure drops scattered cards into a sorting tray and pulls out the next step | confused, then focused | cards / sorting tray / next-step card | title: Clutter in, next step out; labels: loose inputs / sorting / next step | yes |
 
 Priority definitions:
 
@@ -157,7 +157,7 @@ When generating a single image, the skill automatically handles:
 - black line art
 - one accent color
 - whitespace
-- a few short labels, or a no-text version
+- a short title or punchline plus key object, state, and action labels
 - no third-party IP, fixed characters, or specific creator-style imitation
 
 Each image is generated separately unless the user explicitly wants a multi-panel overview.
@@ -173,7 +173,7 @@ Use the QA checklist after generation:
 - does it still read clearly when small?
 - does it look too much like a PPT template or formal flowchart?
 - is there only one accent color?
-- are there too many labels?
+- do labels help comprehension without making the image feel like a manual?
 - does it imitate a known style, brand, or public example?
 
 If text quality is unreliable, generate a no-text version first and add labels later in a design tool.
@@ -189,7 +189,7 @@ Presets make the output more stable:
 | `carousel` | social carousels | 5-8 | `4:5` / `1:1` | one action per page |
 | `slides` | PPT, Keynote, talks | 3-8 | `16:9` | support the idea without stealing hierarchy |
 | `product-doc` | product docs, help center content | 2-5 | default `16:9` | user tasks and system states |
-| `saas-state` | empty, error, permission, loading, success states | 1 | `1:1` / `3:2` / transparent spot | no text, UI-friendly |
+| `saas-state` | empty, error, permission, loading, success states | 1 | `1:1` / `3:2` / transparent spot | light labels, UI-friendly |
 | `course` | tutorials, courses, handouts | 4-10 | `16:9` / `4:3` | learning actions |
 | `readme` | open-source README, contribution guide, release notes | 2-4 | default `16:9` | engineering-doc tone |
 | `thumbnail` | video, podcast, event, article-cover concepts | 1-3 | default `16:9` | strong metaphor, not final poster art |
@@ -202,7 +202,7 @@ Use $stick-figure-illustrations with the carousel preset to design a social caro
 Topic: How one person turns AI into a daily workflow
 ```
 
-![Social carousel plan: turning AI into a daily workflow](assets/readme-examples/04-carousel-ai-workflow.png)
+![Social carousel plan: turning AI into a daily workflow](assets/readme-examples/04-carousel-ai-workflow-en-v2.png)
 
 ## Copy-Paste Examples
 
@@ -240,7 +240,7 @@ Use $stick-figure-illustrations with the saas-state preset to generate an empty-
 State: The user has not created any project yet.
 ```
 
-![SaaS empty state: the user has not created any project yet](assets/readme-examples/02-saas-empty-state.png)
+![SaaS empty state: the user has not created any project yet](assets/readme-examples/02-saas-empty-state-en-v2.png)
 
 ### Plan README illustrations for an open-source project
 
@@ -254,13 +254,13 @@ Scenes:
 4. Open a PR
 ```
 
-![Open-source README illustration plan: install, configure, submit an issue, open a PR](assets/readme-examples/03-readme-illustration-plan.png)
+![Open-source README illustration plan: install, configure, submit an issue, open a PR](assets/readme-examples/03-readme-illustration-plan-en-v2.png)
 
 More English examples: [examples/prompts.en.md](./examples/prompts.en.md). Chinese examples: [examples/prompts.md](./examples/prompts.md)
 
-## Scene Patterns
+## Composition Patterns
 
-Each image should use one base pattern:
+`Scene Patterns` means the composition pattern for how an idea becomes visible, not the use case. Each image should use one primary pattern:
 
 | Pattern | Best for | Typical composition |
 |---|---|---|
@@ -272,6 +272,14 @@ Each image should use one base pattern:
 | `Trade-off` | speed vs quality, automation vs control | figure chooses between a scale, slider, or two doors |
 | `Obstacle` | blockers, permissions, bugs, overload | figure removes, bypasses, or marks an obstacle |
 | `Loop` | feedback loop, iteration, training, review | figure pushes a simple cycle |
+| `Container` | organizing clutter, knowledge bases, task capture | figure puts fragments into a box, tray, or folder |
+| `Workbench` | AI workflows, creative processing, debugging | raw inputs on the left, processing in the middle, output on the right |
+| `Checklist` | install, config, onboarding, release checks | figure checks the current step and places the next one |
+| `Map` | locating the problem, planning a route, moving from unknown to action | map marks current location, goal, and route |
+| `Signal-Noise` | overload, prioritization, judgment from data | noise passes through a filter and becomes a signal |
+| `Zoom-in` | key detail, hidden cause, one actionable step | a magnifier or frame highlights the real step |
+
+By default, key objects and states should be labeled, such as "loose inputs", "sorting", "next step", "blocked", or "done". If the image has objects but no labels, it usually needs a redraw or added text.
 
 ## Repository Structure
 

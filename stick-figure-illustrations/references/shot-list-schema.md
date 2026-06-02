@@ -7,7 +7,7 @@ Use this schema when planning illustrations before generation.
 For each candidate image, output:
 
 ```markdown
-| # | Priority | Placement | Canvas | Theme | Core idea | Scene pattern | Stick-figure action | Emotion | Main objects | Labels | Generate? |
+| # | Priority | Placement | Canvas | Theme | Core idea | Composition pattern | Stick-figure action | Emotion | Main objects | Labels | Generate? |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | P0 | after section X | 16:9 | ... | ... | Before/After | ... | ... | ... | ... | yes |
 ```
@@ -31,11 +31,11 @@ Next step:
 - `Canvas`: default to `16:9` unless the user or selected preset specifies another canvas.
 - `Theme`: short title for internal planning, not necessarily text in the image.
 - `Core idea`: one sentence. If it needs two sentences, split it into two images.
-- `Scene pattern`: choose from Before/After, Path, Hand-off, Stack, Split-Merge, Trade-off, Obstacle, Loop, or Custom.
+- `Composition pattern`: choose from Before/After, Path, Hand-off, Stack, Split-Merge, Trade-off, Obstacle, Loop, Container, Workbench, Checklist, Map, Signal-Noise, Zoom-in, or Custom.
 - `Stick-figure action`: the exact action the figure performs. Avoid “standing beside”.
 - `Emotion`: the readable emotional state of the figure, such as confused, relieved, hesitant, focused, calm, or excited.
 - `Main objects`: 1-3 simple objects only.
-- `Labels`: content-driven. Use labels to strengthen emotion, contrast, rhythm, or memorability; concise labels and richer label sets are both acceptable when they serve the idea.
+- `Labels`: write the actual labels to render in the image. Include a short title or punchline plus object/state/action labels unless the user asked for no text. Do not write vague placeholders such as "some labels".
 - `Generate?`: `yes`, `maybe`, or `no`.
 
 ## Priority Rules

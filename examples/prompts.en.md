@@ -1,6 +1,6 @@
 # Prompt Examples
 
-Copy these prompts into Codex and replace the placeholders. Examples keep only the content and goal the user needs to provide; canvas, visual style, stick-figure emotion, label density, and quality checks are handled by the skill defaults.
+Copy these prompts into Codex and replace the placeholders. Examples keep only the content and goal the user needs to provide; canvas, visual style, stick-figure emotion, expressive short labels, and quality checks are handled by the skill defaults.
 
 ## Best Starting Prompt
 
@@ -18,7 +18,7 @@ Use $stick-figure-illustrations to generate one image for this idea:
 "A good tool gathers the mess and puts the next step in front of you."
 ```
 
-By default, this already means an expressive idea illustration. Users do not need to add "expressive" to the prompt.
+By default, this already means an expressive idea illustration. Users do not need to add "expressive" to the prompt. Unless you explicitly ask for no text, the skill adds a short title, object labels, state words, or a punchline so the image is easier to understand and more fun.
 
 ## Article Illustrations
 
