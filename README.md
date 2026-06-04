@@ -2,6 +2,8 @@
 
 中文 | [English](./README.en.md)
 
+![Stick Figure Illustrations：把复杂内容画清楚一点](assets/readme-examples/00-hero-stick-figure-clarity.png)
+
 这是一个适合放在 Codex 里的创作辅助 skill：把文章、文档、教程、PPT、社媒内容、开源项目说明和产品状态，转成以**有情绪的中性火柴人**为默认主体的草图式解释插画。
 
 ```text
