@@ -20,6 +20,7 @@ This skill is not about generating a fixed mascot, a character IP, or an imitati
 Default visual language:
 
 - anonymous stick figures with circular heads, line bodies, simple limbs, and readable emotion
+- normal figures with two hands and two feet by default; extra limbs only when intentionally showing busyness, multitasking, or all-capable energy
 - `16:9` canvas by default when the user does not specify another size
 - white or transparent background
 - black line art

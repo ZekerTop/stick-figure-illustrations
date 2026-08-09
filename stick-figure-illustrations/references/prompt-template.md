@@ -14,7 +14,7 @@ Canvas:
 {16:9 by default unless the user or selected preset specifies another canvas}
 
 Visual system:
-Neutral stick figures are required by default and should be the main visual subject unless the user explicitly asks for no people. Use simple circular heads, thin black line bodies, simple arms and legs, no named character, no mascot identity, no invented species or signature character design. The stick figure must not be expressionless: give it a readable emotion through minimal eyes, eyebrows, mouth, head tilt, hand gesture, shoulder angle, and body posture. Clean black marker-like line art on a white or transparent-white background. Plenty of whitespace. Use only one restrained accent color: {accent color or auto-selected calm accent}. The accent color should mark the main path, current step, result, warning, or focal object.
+Neutral stick figures are required by default and should be the main visual subject unless the user explicitly asks for no people. Use simple circular heads, thin black line bodies, simple arms and legs, no named character, no mascot identity, no invented species or signature character design. Normal figures must have clean readable anatomy: one head, one torso, two arms, and two legs. Do not accidentally add extra hands, extra feet, broken limbs, fused limbs, or unclear limb counts. Extra arms, repeated hands, motion trails, or exaggerated limbs are allowed only when the core idea explicitly communicates being very busy, multitasking, or all-capable, and the image must make that intention obvious. The stick figure must not be expressionless: give it a readable emotion through minimal eyes, eyebrows, mouth, head tilt, hand gesture, shoulder angle, and body posture. Clean black marker-like line art on a white or transparent-white background. Plenty of whitespace. Use only one restrained accent color: {accent color or auto-selected calm accent}. The accent color should mark the main path, current step, result, warning, or focal object.
 
 Theme:
 {主题}
@@ -41,7 +41,7 @@ Brand/accent color:
 {user-provided brand color, or auto-select one calm accent color}. Use this as the only accent color.
 
 Constraints:
-One image explains one idea. Keep the composition readable at small sizes. Labels should make the image more expressive and self-explanatory: use words to strengthen emotion, contrast, rhythm, or memorability, and label key objects so viewers are not forced to guess. Concise labels are fine, richer label sets are also fine when they serve the idea. Avoid paragraph-like explanations, crowded text, dense diagrams, PPT template aesthetics, complex vector illustration, 3D, photorealism, textured paper, gradients, shadows, UI screenshots, cute stickers, non-human mascots, blob mascots, filled mascot characters, named IP characters, and references to any specific artist, creator, brand, or existing illustration style.
+One image explains one idea. Keep the composition readable at small sizes. Labels should make the image more expressive and self-explanatory: use words to strengthen emotion, contrast, rhythm, or memorability, and label key objects so viewers are not forced to guess. Concise labels are fine, richer label sets are also fine when they serve the idea. Avoid paragraph-like explanations, crowded text, dense diagrams, PPT template aesthetics, complex vector illustration, 3D, photorealism, textured paper, gradients, shadows, UI screenshots, cute stickers, non-human mascots, blob mascots, filled mascot characters, accidental extra hands, accidental extra feet, broken or fused limbs, named IP characters, and references to any specific artist, creator, brand, or existing illustration style.
 ```
 
 ## 从 shot list 生成单张图
@@ -69,7 +69,7 @@ Edit the provided image. Remove most written labels and keep only these short la
 ## 改图：去 IP 化
 
 ```text
-Edit the provided image to remove any mascot or recognizable character identity. Replace the character with a neutral stick figure: circular head, line body, simple arms and legs, no filled body, no distinctive costume, and a simple readable expression that matches the scene emotion. Preserve the same conceptual action, composition, labels, accent color, and canvas ratio.
+Edit the provided image to remove any mascot or recognizable character identity. Replace the character with a neutral stick figure: circular head, line body, exactly two simple arms and two simple legs for normal figures, no accidental extra hands or feet, no fused limbs, no filled body, no distinctive costume, and a simple readable expression that matches the scene emotion. Preserve the same conceptual action, composition, labels, accent color, and canvas ratio.
 ```
 
 ## 改图：适配品牌色
