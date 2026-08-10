@@ -1,3 +1,5 @@
+
+
 # Stick Figure Illustrations Skill
 
 中文 | [English](./README.en.md)
@@ -320,13 +322,13 @@ stick-figure-illustrations/
 | 文件 | 作用 |
 |---|---|
 | `stick-figure-illustrations/SKILL.md` | skill 主入口，定义触发条件、硬性边界和工作流 |
-| `references/visual-system.md` | 火柴人视觉规范、色彩、文字和禁忌 |
-| `references/use-cases.md` | 不同场景的推荐输出形式 |
-| `references/presets.md` | preset 的画幅、数量、密度和目标 |
-| `references/shot-list-schema.md` | shot list 字段和优先级规则 |
-| `references/scene-patterns.md` | 构图模式和隐喻生成方法 |
-| `references/prompt-template.md` | 单张生图、无文字版、改图模板 |
-| `references/qa-checklist.md` | 生成后检查和迭代规则 |
+| `stick-figure-illustrations/references/visual-system.md` | 火柴人视觉规范、色彩、文字和禁忌 |
+| `stick-figure-illustrations/references/use-cases.md` | 不同场景的推荐输出形式 |
+| `stick-figure-illustrations/references/presets.md` | preset 的画幅、数量、密度和目标 |
+| `stick-figure-illustrations/references/shot-list-schema.md` | shot list 字段和优先级规则 |
+| `stick-figure-illustrations/references/scene-patterns.md` | 构图模式和隐喻生成方法 |
+| `stick-figure-illustrations/references/prompt-template.md` | 单张生图、无文字版、改图模板 |
+| `stick-figure-illustrations/references/qa-checklist.md` | 生成后检查和迭代规则 |
 | `examples/prompts.md` | 可复制调用示例 |
 
 ## 维护建议
