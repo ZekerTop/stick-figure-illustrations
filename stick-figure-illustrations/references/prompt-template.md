@@ -8,7 +8,7 @@
 Create one standalone stick-figure sketch illustration.
 
 Purpose:
-{article body illustration / newsletter header / social carousel page / slide spot illustration / product doc empty state / tutorial step / open-source README illustration / SaaS state illustration}
+{article body illustration / newsletter header / WeChat public-account cover / social carousel page / slide spot illustration / product doc empty state / tutorial step / open-source README illustration / SaaS state illustration}
 
 Canvas:
 {16:9 by default unless the user or selected preset specifies another canvas}
@@ -42,6 +42,35 @@ Brand/accent color:
 
 Constraints:
 One image explains one idea. Keep the composition readable at small sizes. Labels should make the image more expressive and self-explanatory: use words to strengthen emotion, contrast, rhythm, or memorability, and label key objects so viewers are not forced to guess. Concise labels are fine, richer label sets are also fine when they serve the idea. Avoid paragraph-like explanations, crowded text, dense diagrams, PPT template aesthetics, complex vector illustration, 3D, photorealism, textured paper, gradients, shadows, UI screenshots, cute stickers, non-human mascots, blob mascots, filled mascot characters, accidental extra hands, accidental extra feet, broken or fused limbs, named IP characters, and references to any specific artist, creator, brand, or existing illustration style.
+```
+
+## 微信公众号宽封面
+
+用户要求“公众号封面”“封面图”“头图”“thumbnail”或指定 `2.35:1`、`21:9` 等宽画幅时，优先使用这个模板。
+
+```text
+Create one standalone editorial stick-figure sketch cover for a Chinese WeChat public-account article.
+
+Canvas:
+{2.35:1 by default for WeChat cover, or the exact user-specified ratio}
+
+Cover title / article idea:
+{用户标题或主题}
+
+Interpretation:
+Turn the title into one concrete visual moment before drawing. Show the reader's problem and the promised shift as an action, not as a poster layout.
+
+Visual system:
+White or transparent-white background. Clean black marker-like line art. One restrained accent color only: {accent color or auto-selected calm accent}. Neutral anonymous stick figure as the main subject, with one head, one torso, two arms, and two legs. Give the figure readable emotion through tiny eyebrows, mouth, head tilt, hand gesture, shoulders, and body posture.
+
+Composition:
+Build the cover around one memorable hand-drawn scene. The stick figure must actively reveal, untangle, inspect, connect, sort, carry, or compare something related to the title. Use simple objects such as a curtain, desk, path, cards, notebook, terminal window, timeline, map, messy thread, checklist, or archive box. Keep the action central enough to be the first thing viewers notice.
+
+Text handling:
+Use either one hand-drawn short title/punchline inside the sketch, or leave a clean title-safe blank area for later typesetting. Add only 1-3 short object/state labels if they help comprehension. Do not typeset the full title as a large digital headline unless the user explicitly asks for a designed poster.
+
+Avoid:
+Do not create a marketing poster, PPT cover, or generic title card. Avoid left-column big text plus right-side illustration, top logo/brand strip, oversized bold sans-serif Chinese title, subtitle stack, decorative underline, blue bullet brand mark, isolated standing stick figure, generic document/checkmark icon as the main visual, and vague labels that do not explain the scene. Do not mimic any specific existing cover or artist style.
 ```
 
 ## 从 shot list 生成单张图

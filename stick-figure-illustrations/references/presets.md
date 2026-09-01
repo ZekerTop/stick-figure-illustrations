@@ -83,6 +83,16 @@ Use presets to choose the right canvas, density, labels, and delivery style.
 - Best patterns: strong metaphor, single obstacle, trade-off.
 - Goal: create a concept draft, not a finished poster.
 
+## `wechat-cover`
+
+- Use for: 微信公众号封面、公众号头图、文章封面、宽封面，especially when the user specifies `2.35:1` or `21:9`.
+- Canvas: use the user's requested ratio; default to `2.35:1` for 微信公众号宽封面 when no ratio is specified.
+- Default count: 1-3 options.
+- Labels: one hand-drawn short title or punchline plus 1-3 object/state labels; if exact title rendering is risky, leave a clean title area for later typesetting.
+- Best patterns: reveal, single obstacle, Before/After, Workbench, Path, Signal-Noise.
+- Goal: make one memorable editorial sketch that reads clearly in a WeChat feed preview.
+- Avoid: poster-template composition, left text column plus right illustration, top brand strip, oversized bold digital headline, subtitle stack, decorative underline, isolated static stick figure, and vague marketing copy.
+
 ## Brand Color
 
 When the user provides a brand color, use it as the only accent color.
