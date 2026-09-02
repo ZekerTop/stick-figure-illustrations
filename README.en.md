@@ -2,7 +2,7 @@
 
 [中文](./README.md) | English
 
-This is a Codex creative-assistance skill for turning articles, docs, tutorials, slides, social content, open-source project explainers, and product states into sketch-style explanatory illustrations with **emotionally expressive neutral stick figures** as the default main subject.
+This is a Codex creative-assistance skill for turning articles, WeChat public-account covers, docs, tutorials, slides, social content, open-source project explainers, and product states into sketch-style explanatory illustrations with **emotionally expressive neutral stick figures** as the default main subject.
 
 ```text
 Display name: Stick Figure Illustrations
@@ -42,6 +42,7 @@ Common use cases:
 |---|---|---|
 | Articles / blogs | body illustrations, key-idea visuals, before/after visuals | `16:9` / `3:2` |
 | Newsletters | email header visuals, summary visuals, pacing visuals | `2:1` / `16:9` |
+| WeChat covers | hand-drawn cover images, title concepts, strong scene covers | `2.35:1` / user-specified ratio |
 | Social carousels | 5-8 connected concept slides, one action per page | `4:5` / `1:1` |
 | PPT / Keynote | section transitions, side visuals for key ideas, closing action visuals | `16:9` |
 | Product docs | install, import, permission, error recovery, success state visuals | `16:9` / `3:2` / square |
@@ -58,9 +59,9 @@ Do not use this skill to generate:
 - complex commercial illustration, 3D, skeuomorphic visuals, real screenshots, or brand KVs
 - formal flowchart templates, complex architecture diagrams, or dense PPT infographics
 - imitations of a specific illustrator, creator, brand, or existing public example
-- poster or cover finals that depend on heavy typography
+- commercial posters, brand KVs, or cover finals that depend on heavy typography
 
-If you need a polished designer-grade poster, this skill is better used as an early concept-sketch and shot-list tool.
+If you need a polished designer-grade poster, this skill is better used as an early concept-sketch and shot-list tool. For a hand-drawn WeChat cover concept, use the `wechat-cover` preset.
 
 ## Installation
 
@@ -192,6 +193,7 @@ Presets make the output more stable:
 |---|---|---:|---|---|
 | `article` | blog posts, articles, long-form notes | 3-6 | default `16:9` | key cognitive turns |
 | `newsletter` | emails, weekly digests, curated notes | 1-3 | default `16:9` | lightweight pacing |
+| `wechat-cover` | WeChat public-account covers, header images, wide covers | 1-3 | default `2.35:1` | large anchor object + figure action + visible transformation |
 | `carousel` | social carousels | 5-8 | `4:5` / `1:1` | one action per page |
 | `slides` | PPT, Keynote, talks | 3-8 | `16:9` | support the idea without stealing hierarchy |
 | `product-doc` | product docs, help center content | 2-5 | default `16:9` | user tasks and system states |

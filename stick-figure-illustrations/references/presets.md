@@ -87,11 +87,14 @@ Use presets to choose the right canvas, density, labels, and delivery style.
 
 - Use for: 微信公众号封面、公众号头图、文章封面、宽封面，especially when the user specifies `2.35:1` or `21:9`.
 - Canvas: use the user's requested ratio; default to `2.35:1` for 微信公众号宽封面 when no ratio is specified.
+- Output: final raster image from an image generation tool. Do not substitute SVG, HTML/CSS, wireframe, PPT, or code-generated vector art unless the user explicitly asks for a vector draft.
 - Default count: 1-3 options.
 - Labels: one hand-drawn short title or punchline plus 1-3 object/state labels; if exact title rendering is risky, leave a clean title area for later typesetting.
-- Best patterns: reveal, single obstacle, Before/After, Workbench, Path, Signal-Noise.
+- Best patterns: reveal, backstage, Workbench, Before/After, Container, Signal-Noise.
 - Goal: make one memorable editorial sketch that reads clearly in a WeChat feed preview.
-- Avoid: poster-template composition, left text column plus right illustration, top brand strip, oversized bold digital headline, subtitle stack, decorative underline, isolated static stick figure, and vague marketing copy.
+- Composition lock: one large anchor object should take about 35%-60% of the canvas, such as a terminal window, curtain, messy desk, archive box, long scroll, notebook, map, or workbench. The stick figure must physically interact with it in the foreground: pull, reveal, sort, connect, inspect, drag, archive, or compress. The result should show a visible transformation from messy inputs to a clearer process.
+- Quality bar: the cover should feel like a loose hand-drawn editorial sketch with a lived-in action moment. If it reads as a neat process diagram, centered mascot pose, keyword collage, or code-made SVG draft, reject it and regenerate.
+- Avoid: poster-template composition, left text column plus right illustration, top brand strip, oversized bold digital headline, subtitle stack, decorative underline, isolated static stick figure, floating keyword cards, plain timeline as the main structure, generic checklist document, perfectly aligned vector geometry, and vague marketing copy.
 
 ## Brand Color
 
